@@ -13,7 +13,7 @@
       name="default"
       title="kk.poleworkx"
       directory="profiles/default"
-      description="Installs the kk.krauss package"
+      description="Installs Diazo Theme for Poleworx Website"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

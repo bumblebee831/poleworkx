@@ -1,0 +1,18 @@
+<!-- While this looks stupid, it has to be written like this. Otherwise cr will be interpeted as whitespace and cause a gap between items -->
+<div class="visualClear"><!-- Needs to be like this because of a bug in browsers...--></div>
+
+<ul id="portal-subnavbar"
+    tal:condition="view/available"
+><tal:listing repeat="brain view/navitems"
+    ><li tal:attributes="id python: 'subnav-' + brain.id;
+                       class python:view.selected_tab==brain.id and 'selected' or 'plain'"
+    ><a tal:attributes="href brain/getURL;
+                           title brain/Description;"
+           tal:content="brain/Title">
+      Nav stuff
+    </a
+    ></li
+></tal:listing
+></ul>
+
+<div class="visualClear"><!-- Needs to be like this because of a bug in browsers...--></div>

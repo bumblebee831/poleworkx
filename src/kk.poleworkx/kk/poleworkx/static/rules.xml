@@ -28,7 +28,7 @@
         
 
             <after theme-children="/html/head">
-                <link rel="shortcut icon" href="/++theme++kk.krauss/images/favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="/++theme++kk.poleworkx/images/favicon.ico" type="image/x-icon" />
             </after>
         
         <!-- Copy over the id/class attributes on the body tag.
@@ -43,6 +43,7 @@
 	    
 	    <!-- navigation -->
         <replace css:content="#portal-globalnav li" css:theme-children="#main-nav" />
+		<replace css:content="#portal-subnavbar li" css:theme-children="#sub" />
 	    
 	    <!-- Copy pathbar/breadcrumbs -->
         <replace css:content="#portal-breadcrumbs" css:theme="#breadcrumbs" />

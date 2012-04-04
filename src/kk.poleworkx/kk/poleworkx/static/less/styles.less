@@ -27,7 +27,7 @@
 
 a {
 	outline: none;
-	color: #4281b7;
+	color: @linkColor;
 }
 
 table {
@@ -43,17 +43,26 @@ iframe {
 	border-style: none;
 }
 
+/* @ GROUS */
+
+@navColor: #ffffff;
+
+@navOverColor: #66ccff;
+
+
+@linkColor: #66ccff;
+
 /* MAIN */
 
 body {
 	font-size: 100%;
 	background: url(../images/bg.png) repeat-x top center #a2d5e7;
 	color: black;
-	font-family: 'Verdana', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: bold;
   color: black;
   line-height: 1.5em;
@@ -84,7 +93,7 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #4281b7;
+	color: @linkColor;
 }
 
 h2 a, h3 a, h4 a {
@@ -92,7 +101,7 @@ h2 a, h3 a, h4 a {
 }
 
 a:link, a:visited {
-	color: #4281b7;
+	color: @linkColor;
 }
 
 a:focus img {
@@ -104,7 +113,7 @@ dt {
 }
 
 input {
-	font-family: 'Verdana', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
 /* SITE */
@@ -120,8 +129,8 @@ input {
 }
 
 .wrapper {
-	border: 10px solid white;
-	width: 980px;
+	background: white;
+	width: 960px;
 	margin: 0px auto 20px auto !important;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -157,7 +166,7 @@ input {
 	background: -o-linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* IE10+ */
 	background: linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4281b7', endColorstr='#66aee9',GradientType=0 ); /* IE6-8 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@linkColor', endColorstr='#66aee9',GradientType=0 ); /* IE6-8 */
 	
 }
 
@@ -199,7 +208,7 @@ input {
 	border: 0px solid red;
 	color: white;
 	font-size: 0.9em;
-	font-family: Verdana;
+	font-family: Arial;
 	font-weight: normal;
 }
 
@@ -210,12 +219,12 @@ input {
 /* NAVI */
 
 #navigation {
-	margin: 0px;
-	width: 760px;
+	margin: 0px auto;
+	width: 960px;
 }
 
 #main-nav {
-	background: white;
+	background: transparent;
 	margin: 0px auto 0px auto;
 	height: 50px;
 	text-align: center;
@@ -233,16 +242,15 @@ input {
 	padding: 20px 20px 15px 0px;
 	background: transparent;
 	white-space: normal;
-	font-size: 0.7em;
+	font-size: 1.0em;
 	text-transform: uppercase;
-	color: #999999;
+	color: @navColor;
 	margin: 0px auto;
-	font-weight: bold;
 }
 
 #main-nav .selected a,
 #main-nav a:hover {
-	color: black !important;
+	color: @navOverColor;
 }
 
 #portal-breadcrumbs {
@@ -255,6 +263,16 @@ input {
 
 #portal-breadcrumbs a {
   color: #333;
+}
+
+/* SUB */
+
+
+#sub {
+	border: 1px solid red !important;
+	margin: 0px auto;
+	width: 960px;
+	text-align: center;
 }
 
 /* CONTENT */
@@ -326,13 +344,13 @@ dl.portlet {
   margin-bottom: 1em;
 }
 #content a:link, dl.portlet a:link {
-  color: #4281b7;
+  color: @linkColor;
 }
 #content a:visited, dl.portlet a:visited {
-  color: #4281b7;
+  color: @linkColor;
 }
 #content a:hover, dl.portlet a:hover {
-  color: #4281b7 !important;
+  color: @linkColor !important;
 }
 #content a:target {
   background-color: #ffb;
@@ -384,7 +402,7 @@ dl.portlet {
   display: block;
 }
 #content div.documentByLine a:link, #content div.documentByLine a:visited, #content div.documentByLine a:hover {
-  color: #4281b7 !important;
+  color: @linkColor !important;
 }
 #content .discreet, #sidebar .discreet {
   color: #666;
@@ -1035,7 +1053,7 @@ fieldset, .editionComment {
   width: auto;
 }
 #content .field input[type="text"][name$=".title"], #archetypes-fieldname-title input {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 125%;
   color: Black;
   letter-spacing: -0.05em;
@@ -1044,7 +1062,7 @@ fieldset, .editionComment {
   font-weight: bold;
 }
 #content .field textarea[name$=".description"], #archetypes-fieldname-description textarea#description {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Arial', sans-serif;
   color: #666666;
   font-size: 1.25em;
   font-weight: bold;
@@ -1240,7 +1258,7 @@ div.overlay label {
   margin-bottom: 0.25em;
 }
 div.overlay a:hover {
-  color: #4281b7;
+  color: @linkColor;
 }
 div.overlay a.selected {
   color: #000000;
@@ -1321,7 +1339,7 @@ div.overlay .formControls a {
 #footer {
 	color: #999;
 	width: 940px;
-	font-family: Verdana;
+	font-family: Arial;
 	padding: 20px 0px 20px 0px;
 	margin: 0px auto 0px auto;
 	text-align: left;
@@ -1416,7 +1434,7 @@ div.overlay .formControls a {
   font-weight: bold;
   margin: 0px;
   font-size: 1.8em !important;
-  font-family: Verdana;
+  font-family: Arial;
 }
 .portletHeader a, .managedPortlet .portletHeader a {
   outline: none;
@@ -1489,7 +1507,7 @@ span.portletItemDetails {
   margin: 0px;
   font-size: 240% !important;
   width: 100%;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 .navTree {
   list-style: none;
