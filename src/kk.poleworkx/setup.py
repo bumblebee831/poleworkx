@@ -25,7 +25,7 @@ setup(name='kk.poleworkx',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'plone.app.theming',
       ],
       entry_points="""
       # -*- Entry points: -*-
