@@ -1,8 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="kk.poleworkx">
 
   <five:registerPackage package="." initialize=".initialize" />
@@ -11,9 +13,11 @@
       name="default"
       title="kk.poleworkx"
       directory="profiles/default"
-      description="Installs the kk.poleworkx package"
+      description="Installs the kk.krauss package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
+
+  <plone:static
+       type="theme" directory="static" />
   
 </configure>
