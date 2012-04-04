@@ -157,29 +157,20 @@ input {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: rgb(66,129,183); /* Old browsers */
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyODFiNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NmFlZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  rgba(66,129,183,1) 0%, rgba(102,174,233,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(66,129,183,1)), color-stop(100%,rgba(102,174,233,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* IE10+ */
-	background: linear-gradient(top,  rgba(66,129,183,1) 0%,rgba(102,174,233,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@linkColor', endColorstr='#66aee9',GradientType=0 ); /* IE6-8 */
 	
 }
 
 #header-wrapper {
 	margin: 0px auto !important;
 	border: 0px solid red;
-	background: transparent;
+	background: #44718f;
 	width: 960px;
 
 }
 
 #main-content {
 	padding: 0px 40px 0px 40px;
+	background: #ecf3f6;
 }
 
 #header {
@@ -195,22 +186,38 @@ input {
 #logo {
 	margin: 0px;
 	text-align: left;
-	padding: 50px 0px 50px 0px;
+	padding: 10px 0px 185px 0px;
+	background: url(../images/logo.gif) no-repeat 0px 17px #b1e3f4;
+	border: 0px solid red;
+	-webkit-border-radius: 5px 0px 0px 0px;
+	-moz-border-radius: 5px 0px 0px 0px;
+	border-radius: 5px 0px 0px 0px;
 }
 
 #logo h1 {
 	color: #ccc;
-	text-transform: uppercase;
-	font-size: 2em;
+	text-transform: none;
+	font-size: 3.4em;
+	line-height: 1em;
 	letter-spacing: 1px;
+	font-family: Georgia;
+	font-weight: normal;
+	color: #325479;
+	padding: 10px 0px 0px 0px;
+	border: 0px solid red;
+	text-align: center;
 }
 
 #logo h3 {
-	border: 0px solid red;
 	color: #ccc;
-	font-size: 0.9em;
-	font-family: Arial;
+	font-size: 1.2em;
+	font-family: Georgia;
 	font-weight: normal;
+	color: white;
+	padding: 0px 0px 0px 0px;
+	border: 0px solid red;
+	text-transform: uppercase;
+	text-align: center;
 }
 #above-content {
 	margin: 0px 0px 0px 0px;
@@ -221,6 +228,27 @@ input {
 }
 #above-content #portal-breadcrumbs {
   display: none;
+}
+
+.carousel {
+    margin-bottom: 0em;
+}
+
+.carousel-pager {
+    margin: -23px 0px 0px 20px;
+	z-index: 100000;
+	position: relative;
+	border: 0px solid red;
+}
+
+.carousel-pager-item {
+    font-size: 70%;
+    text-decoration: none;
+}
+
+.carousel-pager-item, .carousel-pager-button-prev, .carousel-pager-button-next {
+    background-color: #DDDDDD;
+    padding: 0.25em 0.5em;
 }
 
 .carousel-image img {
@@ -303,7 +331,6 @@ input {
 	line-height: 1.5em;
 	margin: 0px 0px 0px 0px;
 	border: 0px solid black !important;
-	background: transparent;
 	padding: 0px 40px 0px 0px !important;
 	overflow:auto;
 	vertical-align: top;
@@ -316,6 +343,7 @@ input {
 	padding: 60px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	vertical-align: top;
+	background: #c1e8f7;
 }
 
 .section-kalender-2012 #content {
