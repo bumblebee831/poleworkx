@@ -59,6 +59,8 @@ body {
 	background: url(../images/bg.png) repeat-x top center #a2d5e7;
 	color: black;
 	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,46 +121,27 @@ input {
 /* SITE */
 
 #outer-wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0px;
+	margin: 0px !important;
 	background: url(../images/top.png) no-repeat top center transparent;
 	width: 100%;
-	border: 0px solid blue;
+	min-height: 100%;
+	border-top: 1px solid #294665;
+	padding: 0px !important;
 }
 
-.wrapper {
-	background: white;
+#inner-wrapper {
+	background: url(../images/col.gif) repeat-y top center transparent;
 	width: 960px;
-	margin: 0px auto 20px auto !important;
+	margin: 20px auto 20px auto !important;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
 	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.5);
 	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.5);
+	border: 0px solid green;
 }
 
-#inner-wrapper {
-	margin: 0px auto;
-	border: 0px solid #cccccc;
-	background: white;
-	width: 960px;
-	padding: 0px 0px 0px 0px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-#top-wrapper {
-	width: 940px;
-	margin: 0px auto 0px auto;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	
-}
 
 #header-wrapper {
 	margin: 0px auto !important;
@@ -169,8 +152,8 @@ input {
 }
 
 #main-content {
-	padding: 0px 40px 0px 40px;
-	background: #ecf3f6;
+	padding: 0px;
+	background: transparent;
 }
 
 #header {
@@ -306,7 +289,7 @@ input {
 
 #portal-breadcrumbs {
   font-size: 0.7em;
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 20px;
   padding: 0px;
   background: transparent;
   color: #333;
@@ -355,7 +338,7 @@ input {
 	line-height: 1.5em;
 	margin: 0px 0px 0px 0px;
 	border: 0px solid black !important;
-	padding: 0px 40px 0px 0px !important;
+	padding: 0px 20px 0px 20px !important;
 	overflow:auto;
 	vertical-align: top;
 }
@@ -364,10 +347,11 @@ input {
 	border: 0px solid blue;
 	line-height: 1.5em;
 	float: right;
-	padding: 60px 0px 0px 0px;
+	padding: 60px 0px 0px 20px;
 	margin: 0px 0px 0px 0px;
 	vertical-align: top;
 	background: #c1e8f7;
+	width: 300px;
 }
 
 .section-kalender-2012 #content {
@@ -1401,31 +1385,18 @@ div.overlay .formControls a {
 }
 #footer {
 	color: #999;
-	width: 940px;
+	width: 900px;
 	font-family: Arial;
-	padding: 20px 0px 20px 0px;
+	padding: 20px 60px 20px 0px;
 	margin: 0px auto 0px auto;
-	text-align: left;
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5OTk5OTkiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(153,153,153,0.65) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(153,153,153,0.65))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(153,153,153,0.65) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(153,153,153,0.65) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(153,153,153,0.65) 100%); /* IE10+ */
-	background: linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(153,153,153,0.65) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a6999999',GradientType=0 ); /* IE6-8 */
+	text-align: right;
+	font-size: 60%;
+	text-transform: uppercase;
+	border: 0px solid red;
 
 
 }
-#copyright {
-  padding: 30px 0px 0px 0px;
-  background: transparent;
-  font-size: 60%;
-  margin: 0px 0px 0px 0px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .hiddenStructure {
   display: none;
   background: transparent;
