@@ -267,15 +267,16 @@ input {
 #navigation {
 	margin: 0px auto;
 	width: 960px;
+	border: 0px solid red;
 }
 
 #main-nav {
 	background: transparent;
 	margin: 107px auto 0px auto;
-	height: 50px;
 	text-align: center;
 	padding: 0px 0px 0px 0px;
 	width: 940px;
+	border: 0px solid red;
 }
 
 #main-nav ul {
@@ -285,13 +286,17 @@ input {
 
 #main-nav li a {
 	display: inline-block;
-	padding: 20px 20px 15px 0px;
-	background: transparent;
+	padding: 0px 10px 15px 5px;
+	background: url(../images/bullet.png) no-repeat top right transparent;
 	white-space: normal;
 	font-size: 1.0em;
 	text-transform: uppercase;
 	color: @navColor;
 	margin: 0px auto;
+}
+
+#main-nav #portaltab-gallerie a {
+	background: none;
 }
 
 #main-nav .selected a,
@@ -315,10 +320,29 @@ input {
 
 
 #sub {
-	border: 1px solid red !important;
+	border: 0px solid red !important;
 	margin: 0px auto;
 	width: 960px;
 	text-align: center;
+	height: 15px;
+}
+
+#sub li a {
+	display: inline-block;
+	padding: 0px 10px 0px 5px;
+	background: url(../images/bullet.png) no-repeat top right transparent;
+	white-space: normal;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: @navColor;
+	margin: 0px auto;
+}
+
+#sub #subnav-poledance-polefitness a,
+#sub #subnav-bankverbindung a,
+#sub #subnav-poleworkx-buchen a,
+#sub #subnav-videos a {
+	background : none;
 }
 
 /* CONTENT */
