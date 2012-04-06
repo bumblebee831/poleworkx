@@ -15,6 +15,19 @@
 </head>
 <body>
 	<div id="outer-wrapper">
+		<form id="search" name="search" action="/search">
+			<input class="searchButton"
+			type="submit"
+			value=""
+			id="search-site-button"
+			/> 
+			<input id="search-site"
+			name="SearchableText"
+			title="Diese Seite durchsuchen&hellip;" accesskey="4"
+			class="inputLabel" size="15"
+			/>
+		</form>
+		
 		<div id="navigation">
 			<ul id="main-nav">
 				<li><a href=".">1st Section</a></li>
@@ -25,6 +38,7 @@
 			<div id="sub">
 			</div>
 		</div>
+		
 		<div id="inner-wrapper">
 			<div id="header-wrapper">
 				<div id="header">
@@ -32,7 +46,6 @@
 						<a href="/"><h1>PoleworkX</h1></a>
 						<h3>Polefitness in München</h3>
 					</div>
-					<form id="search" name="search" action="/search"> 
 				</div>
 			<div id="above-content"></div>
 			<div class="visualClear"><!-- --></div>
