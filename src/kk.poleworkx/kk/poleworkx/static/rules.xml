@@ -35,9 +35,7 @@
              This is important for per-section styling -->
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
-        
         <copy attributes="href" css:content="#portal-logo" css:theme="#logo" />
-	    
 	    <replace css:content="#portal-siteactions li" css:theme-children="#actions" />
 	    <replace css:content="#portal-languageselector li" css:theme-children="#language" />
 	    
@@ -53,7 +51,7 @@
 	    <replace css:content-children="#viewlet-above-content" css:theme-children="#above-content" />
 	    <replace css:content-children="#content" css:theme-children="#content" />
 	    <replace css:content="#edit-bar" css:theme="#editbar" />
-        
+
         <!-- Portal Columns -->
         <replace css:content-children="#portal-column-one > *" css:theme-children="#sidebar-left" />
         <replace css:content-children="#portal-column-two > *" css:theme-children="#sidebar" />
