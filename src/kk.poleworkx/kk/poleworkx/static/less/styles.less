@@ -49,7 +49,6 @@ iframe {
 
 @navOverColor: #66ccff;
 
-
 @linkColor: #66ccff;
 
 /* MAIN */
@@ -191,6 +190,16 @@ input {
 	text-align: center;
 }
 
+#logo h1:hover {
+	color: white;
+	-webkit-transition:color 0.5s ease-in;  
+	-moz-transition:color 0.5s ease-in;  
+	-o-transition:color 0.5s ease-in;  
+	transition:color 0.5s ease-in;
+}
+
+
+
 #logo h3 {
 	color: #ccc;
 	font-size: 1.2em;
@@ -297,6 +306,10 @@ input {
 	text-transform: uppercase;
 	color: @navColor;
 	margin: 0px auto;
+	-webkit-transition:color 0.5s ease-in;  
+	-moz-transition:color 0.5s ease-in;  
+	-o-transition:color 0.5s ease-in;  
+	transition:color 0.5s ease-in;
 }
 
 #main-nav #portaltab-ueber-poleworkx a {
@@ -344,6 +357,15 @@ input {
 	text-transform: uppercase;
 	color: @navColor;
 	margin: 0px auto;
+}
+
+#sub .selected a,
+#sub a:hover {
+	color: @navOverColor;
+	-webkit-transition:color 0.5s ease-in;  
+	-moz-transition:color 0.5s ease-in;  
+	-o-transition:color 0.5s ease-in;  
+	transition:color 0.5s ease-in;
 }
 
 #sub #subnav-poledance-polefitness a,
