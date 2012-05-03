@@ -177,7 +177,6 @@ input {
   -moz-transition: color 0.5s ease-in;
   -o-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
-  behavior: url(../js/PIE.htc);
 }
 #logo h3 {
   color: #ccc;
@@ -190,7 +189,6 @@ input {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0px 0px 1px #ffffff;
-  behavior: url(../js/PIE.htc);
 }
 #above-content {
   margin: 0px 0px 0px 0px;
