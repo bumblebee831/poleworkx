@@ -51,6 +51,7 @@
 	    <replace css:content-children="#viewlet-above-content" css:theme-children="#above-content" />
 	    <replace css:content-children="#content" css:theme-children="#content" />
 	    <replace css:content="#edit-bar" css:theme="#editbar" />
+	    <replace css:content-children="#viewlet-below-content" css:theme-children="#below-content" />
 
         <!-- Portal Columns -->
         <replace css:content-children="#portal-column-one > *" css:theme-children="#sidebar-left" />

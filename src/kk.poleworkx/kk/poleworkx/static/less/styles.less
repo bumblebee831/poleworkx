@@ -227,6 +227,9 @@ input {
 
 .carousel {
     margin-bottom: 0em;
+	-webkit-border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;
+	border-radius: 0px 5px 0px 0px;
 }
 
 .carousel-pager {
@@ -252,7 +255,6 @@ input {
 	border-radius: 0px 5px 0px 0px;
 	background: #44718f;
 	behavior: url(../js/PIE.htc);
-	position: absolute;
 }
 
 #search {
@@ -405,11 +407,15 @@ input {
 	border: 0px solid blue;
 	line-height: 1.5em;
 	float: right;
-	padding: 60px 0px 0px 20px;
+	padding: 0px 0px 0px 10px;
 	margin: 0px 0px 0px 0px;
 	vertical-align: top;
 	background: #c1e8f7;
 	width: 300px;
+}
+
+.social {
+	border: 1px solid red;
 }
 
 .section-kalender-2012 #content {
@@ -1473,10 +1479,16 @@ div.overlay .formControls a {
 .portlet {
   margin: 0px 0px 10px 0px;
   border-bottom: 0px;
-  background: transparent !important;
   border: 0px solid black;
   padding: 0px;
   color: #333333 !important;
+  background: #ffffff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.2);
+	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.2);
 }
 .portlet a {
   text-decoration: none;
@@ -1522,10 +1534,10 @@ div.overlay .formControls a {
 .portletHeader, .managedPortlet .portletHeader {
   background: transparent !important;
   border-width: 0px;
-  padding: 0px 0px 20px 0px !important;
+  padding: 20px !important;
   font-weight: bold;
   margin: 0px;
-  font-size: 1.8em !important;
+  font-size: 1em !important;
   font-family: Arial;
 }
 .portletHeader a, .managedPortlet .portletHeader a {
@@ -1533,7 +1545,7 @@ div.overlay .formControls a {
 }
 .portletItem {
   margin: 0px 0px 0px 0px;
-  padding: 15px 0px 0px 0px;
+  padding: 20px;
   border: 0px dotted #ccc;
   background: transparent !important;
 }
@@ -1697,4 +1709,15 @@ span.portletItemDetails {
     margin-left: 0;
     padding: 10px 0px 10px 0px;
 	border-bottom: 1px dotted #ccc;
+}
+
+#portlets-below {
+	margin: 0px 0px 0px 335px;
+	border: 0px solid red;
+	width:610px;
+	padding: 0px;
+}
+
+.BelowPortletManager3 {
+	display: none;
 }
