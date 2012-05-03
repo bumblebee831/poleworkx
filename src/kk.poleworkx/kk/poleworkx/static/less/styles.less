@@ -145,8 +145,11 @@ input {
 #header-wrapper {
 	margin: 0px auto !important;
 	border: 0px solid red;
-	background: #44718f;
 	width: 960px;
+	-webkit-border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;
+	border-radius: 0px 5px 0px 0px;
+	behavior: url(../js/PIE.htc);
 
 }
 
@@ -168,7 +171,7 @@ input {
 #logo {
 	margin: 0px;
 	text-align: left;
-	padding: 10px 0px 187px 0px;
+	padding: 10px 0px 195px 0px;
 	background: url(../images/logo.gif) no-repeat 0px 17px #b1e3f4;
 	border: 0px solid red;
 	-webkit-border-radius: 5px 0px 0px 0px;
@@ -401,6 +404,7 @@ input {
 	padding: 0px 20px 0px 20px !important;
 	overflow:auto;
 	vertical-align: top;
+	font-size: 0.8em;
 }
 
 #sidebar {
@@ -452,7 +456,7 @@ body#content {
 #content dl,
 dl.portlet p,
 dl.portlet {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 #content a:link, dl.portlet a:link {
   color: @linkColor;
@@ -1457,10 +1461,7 @@ div.overlay .formControls a {
 	font-size: 60%;
 	text-transform: uppercase;
 	border: 0px solid red;
-
-
 }
-
 .hiddenStructure {
   display: none;
   background: transparent;
@@ -1477,18 +1478,18 @@ div.overlay .formControls a {
 }
 
 .portlet {
-  margin: 0px 0px 10px 0px;
-  border-bottom: 0px;
-  border: 0px solid black;
-  padding: 0px;
-  color: #333333 !important;
-  background: #ffffff;
+	margin: 0px 0px 10px 0px;
+	border: 0px;
+	padding: 0px;
+	color: #333333 !important;
+	background: #ffffff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
 	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.2);
 	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.2);
+	font-size: 0.8em;
 }
 .portlet a {
   text-decoration: none;
@@ -1534,7 +1535,7 @@ div.overlay .formControls a {
 .portletHeader, .managedPortlet .portletHeader {
   background: transparent !important;
   border-width: 0px;
-  padding: 20px !important;
+  padding: 12px !important;
   font-weight: bold;
   margin: 0px;
   font-size: 1em !important;
@@ -1545,7 +1546,7 @@ div.overlay .formControls a {
 }
 .portletItem {
   margin: 0px 0px 0px 0px;
-  padding: 20px;
+  padding: 0px 12px 12px 12px;
   border: 0px dotted #ccc;
   background: transparent !important;
 }
@@ -1690,16 +1691,6 @@ span.portletItemDetails {
 }
 #portal-sitemap a {
 	padding: 7px 0px 5px 0px !important;
-}
-
-#language {
-	width: 960px;
-	margin: 0px auto;
-	border: 0px solid red;
-	text-align: left;
-	font-size: 60%;
-	padding: 10px 0px 10px 10px;
-	text-transform: uppercase;
 }
 
 .portletItemDetails {
