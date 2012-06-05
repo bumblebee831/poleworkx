@@ -389,7 +389,7 @@ body#content {
 }
 .documentFirstHeading {
   margin: 50px 0px 30px 0px !important;
-  color: #294665;
+  color: #294665 !important;
   font-weight: normal;
   text-transform: none;
   font-size: 2.8em !important;
@@ -1448,13 +1448,13 @@ div.overlay .formControls a {
   display: block;
 }
 #footer {
-  color: #999;
+  color: #294665;
   width: 900px;
   font-family: Arial;
   padding: 20px 60px 20px 0px;
   margin: 0px auto 0px auto;
   text-align: right;
-  font-size: 60%;
+  font-size: 70%;
   text-transform: uppercase;
   border: 0px solid red;
 }
@@ -1699,6 +1699,10 @@ dd.portletItem .navTreeItem a {
   margin-left: 0;
   padding: 10px 0px 10px 0px;
   border-bottom: 1px dotted #ccc;
+}
+#below-content {
+  border: 0px solid red;
+  margin: 0px 0px 0px 0px !important;
 }
 #portlets-below {
   margin: 0px 0px 0px 335px;
