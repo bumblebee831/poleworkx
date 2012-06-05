@@ -31,7 +31,7 @@ code {
 }
 a {
   outline: none;
-  color: #66ccff;
+  color: #336699;
 }
 table {
   border-spacing: 0;
@@ -70,6 +70,13 @@ h1 {
 h2 {
   font-size: 1.75em;
 }
+.section-presse-tv h2 {
+  font-size: 1.75em;
+  margin: 0px 0px 30px 0px;
+  border: 1px solid #336699;
+  border-width: 1px 0px 1px 0px;
+  padding: 10px 0px 10px 0px;
+}
 h3 {
   font-size: 1.25em;
 }
@@ -88,7 +95,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #66ccff;
+  color: #336699;
 }
 h2 a,
 h3 a,
@@ -97,7 +104,7 @@ h4 a {
 }
 a:link,
 a:visited {
-  color: #66ccff;
+  color: #336699;
 }
 a:focus img {
   outline: thin dotted;
@@ -406,15 +413,15 @@ dl.portlet {
 }
 #content a:link,
 dl.portlet a:link {
-  color: #66ccff;
+  color: #336699;
 }
 #content a:visited,
 dl.portlet a:visited {
-  color: #66ccff;
+  color: #336699;
 }
 #content a:hover,
 dl.portlet a:hover {
-  color: #66ccff !important;
+  color: #336699 !important;
 }
 #content a:target {
   background-color: #ffb;
@@ -469,7 +476,7 @@ dl.portlet li {
 #content div.documentByLine a:link,
 #content div.documentByLine a:visited,
 #content div.documentByLine a:hover {
-  color: #66ccff !important;
+  color: #336699 !important;
 }
 #content .discreet,
 #sidebar .discreet {
@@ -1372,7 +1379,7 @@ div.overlay label {
   margin-bottom: 0.25em;
 }
 div.overlay a:hover {
-  color: #66ccff;
+  color: #336699;
 }
 div.overlay a.selected {
   color: #000000;
