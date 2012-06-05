@@ -298,14 +298,13 @@ input {
 }
 #portal-breadcrumbs {
   font-size: 0.7em;
-  margin: 20px 0px 0px 20px;
-  padding: 0px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   background: transparent;
   color: #333;
   border: 0px solid red;
   width: 620px;
   float: right;
-  padding: 0px 0px 0px 20px;
 }
 #portal-breadcrumbs a {
   color: #333;
@@ -341,7 +340,8 @@ input {
 #sub #subnav-bankverbindung a,
 #sub #subnav-poleworkx-buchen a,
 #sub #subnav-videos a,
-#subnav-poleworkx-tank-top a {
+#subnav-poleworkx-tank-top a,
+#sub #subnav-junggesellinnenabschied a {
   background: none;
 }
 /* CONTENT */
@@ -354,13 +354,15 @@ input {
   border: 0px solid black !important;
   padding: 0px 20px 20px 20px !important;
   overflow: auto;
-  vertical-align: top;
+  vertical-align: top !important;
   font-size: 0.8em;
+  float: right;
+  width: 600px;
 }
 #sidebar {
   border: 0px solid blue;
   line-height: 1.5em;
-  float: right;
+  float: left;
   padding: 0px 15px 0px 15px;
   margin: 0px 0px 0px 0px;
   vertical-align: top;
@@ -1702,10 +1704,11 @@ dd.portletItem .navTreeItem a {
 }
 #below-content {
   border: 0px solid red;
-  margin: 0px 0px 0px 0px !important;
+  margin: 0px 15px 0px 0px !important;
+  float: right;
 }
 #portlets-below {
-  margin: 0px 0px 0px 335px;
+  margin: 0px 0px 0px 0px;
   border: 0px solid red;
   width: 610px;
   padding: 0px;
