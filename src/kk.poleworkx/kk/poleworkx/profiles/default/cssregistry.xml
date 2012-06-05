@@ -17,5 +17,12 @@
     rendering="link"
     applyPrefix="True"
     />
+ <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++kk.poleworkx/css/gallery.css" media="" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
 
 </object>
