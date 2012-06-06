@@ -342,7 +342,7 @@ input {
 #sub li a {
   display: inline-block;
   padding: 0px 10px 0px 5px;
-  background: url(../images/bullet.png) no-repeat top right transparent;
+  background: url(../images/bullet-sub.png) no-repeat top right transparent;
   white-space: normal;
   font-size: 0.9em;
   text-transform: none;
