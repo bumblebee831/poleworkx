@@ -114,7 +114,7 @@ a:link, a:visited {
 }
 
 a:focus img {
-	outline: thin dotted;
+	outline: none;
 }
 
 dt {
@@ -151,9 +151,7 @@ input {
 	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
 	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.5);
 	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.5);
-	border: 0px solid green;
 }
-
 
 #header-wrapper {
 	margin: 0px auto !important;
@@ -163,7 +161,6 @@ input {
 	-moz-border-radius: 0px 5px 0px 0px;
 	border-radius: 0px 5px 0px 0px;
 	behavior: url(../js/PIE.htc);
-
 }
 
 #main-content {
@@ -174,7 +171,6 @@ input {
 #header {
 	width: 320px;
 	float: left;
-	border: solid 0px blue;
 }
 
 #header a {
@@ -256,13 +252,23 @@ input {
 }
 
 .carousel-pager-item {
-    font-size: 70%;
-    text-decoration: none;
+	font-size: 0.6em;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .carousel-pager-item, .carousel-pager-button-prev, .carousel-pager-button-next {
     background-color: #DDDDDD;
-    padding: 0.25em 0.5em;
+    padding: 0.25em 0.7em;
+}
+
+.carousel-pager-item-active:link, 
+.carousel-pager-item-active:visited, 
+.carousel-pager-item-active .carousel-title {
+	color: white;
+	background-color: #92dfff;
 }
 
 .carousel-image img {
@@ -1528,16 +1534,10 @@ div.overlay .formControls a {
   display: block;
   color: black;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 1em;
 }
 .portletItem ul {
   list-style-type: none;
-}
-.portletHeader, .portletFooter {
-  position: relative!important;
-  border: 0px;
-  width: 100%;
-  border: 1px solid red;
 }
 .lastItem {
   padding: 0px 0px 20px 0px !important;
@@ -1572,7 +1572,7 @@ div.overlay .formControls a {
   padding: 12px !important;
   font-weight: bold;
   margin: 0px;
-  font-size: 1em !important;
+  font-size: 1.3em !important;
   font-family: Arial;
 }
 .portletHeader a, .managedPortlet .portletHeader a {
