@@ -1160,6 +1160,8 @@ input.searchPage {
 }
 .image-inline {
 	float: none;
+}
+img.image-left, img.image-right, .captioned img, img.image-inline {
 	border: 10px solid white !important;
 	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
 	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.5);
@@ -1168,14 +1170,10 @@ input.searchPage {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-img.image-left, img.image-right, .captioned img {
-	border: 10px solid white !important;
-	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.5);
-	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.5);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+
+.portlet img.image-left, .portlet img.image-right, .portlet .captioned img, .portlet img.image-inline {
+	box-shadow: none;
+	border: none !important;
 }
 dd.image-caption {
   text-align: left;
