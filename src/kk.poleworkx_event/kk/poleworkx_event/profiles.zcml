@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="kk.poleworkx_event">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Poleworkx Custom Event"
+      directory="profiles/default"
+      description='Extension profile for poleoworkx site'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

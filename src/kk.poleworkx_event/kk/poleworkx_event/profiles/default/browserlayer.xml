@@ -1,0 +1,6 @@
+<layers>
+ <layer
+     name="kk.poleworkx_event"
+     interface="kk.poleworkx_event.interfaces.IAddOnInstalled"
+     />
+</layers>
