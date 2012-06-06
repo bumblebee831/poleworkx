@@ -212,6 +212,10 @@ input {
 #above-content #portal-breadcrumbs {
   display: none;
 }
+#sidebar-left {
+  display: none;
+}
+/* CAROUSEL */
 .carousel {
   margin-bottom: 0em;
   -webkit-border-radius: 0px 5px 0px 0px;
@@ -222,7 +226,6 @@ input {
   margin: -40px 0px 0px 20px;
   z-index: 100000;
   position: relative;
-  border: 0px solid red;
 }
 .carousel-pager-item {
   font-size: 0.6em;
@@ -314,6 +317,7 @@ input {
 #main-nav a:hover {
   color: #66ccff;
 }
+/* BREADCRUMBS */
 #portal-breadcrumbs {
   font-size: 0.7em;
   margin: 20px 0px 0px 0px;
@@ -369,7 +373,6 @@ input {
 #content {
   line-height: 1.5em;
   margin: 0px 0px 0px 0px;
-  border: 0px solid black !important;
   padding: 0px 20px 20px 20px !important;
   overflow: auto;
   vertical-align: top !important;
@@ -378,7 +381,6 @@ input {
   width: 600px;
 }
 #sidebar {
-  border: 0px solid blue;
   line-height: 1.5em;
   float: left;
   padding: 25px 15px 0px 15px;
@@ -387,20 +389,11 @@ input {
   background: #c1e8f7;
   width: 290px;
 }
-.social {
-  border: 1px solid red;
-}
 .section-kalender-2012 #content {
   padding: 0px 0px 0px 0px !important;
 }
 .section-kontakt #content {
   width: 650px;
-}
-#sidebar-left {
-  display: none;
-}
-body#content {
-  margin: 1em;
 }
 #content h1 {
   margin-top: 0.5em;

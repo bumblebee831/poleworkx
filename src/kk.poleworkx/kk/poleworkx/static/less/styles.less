@@ -212,8 +212,6 @@ input {
 
 }
 
-
-
 #logo h3 {
 	color: #ccc;
 	font-size: 1.1em;
@@ -226,6 +224,7 @@ input {
 	text-align: center;
 	text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
 }
+
 #above-content {
 	margin: 0px 0px 0px 0px;
 	padding: 0px;
@@ -233,12 +232,19 @@ input {
 	width: 640px;
 	float: right;
 }
+
 #above-content #portal-breadcrumbs {
   display: none;
 }
 
+#sidebar-left {
+  display: none;
+}
+
+/* CAROUSEL */
+
 .carousel {
-    margin-bottom: 0em;
+	margin-bottom: 0em;
 	-webkit-border-radius: 0px 5px 0px 0px;
 	-moz-border-radius: 0px 5px 0px 0px;
 	border-radius: 0px 5px 0px 0px;
@@ -248,7 +254,6 @@ input {
     margin: -40px 0px 0px 20px;
 	z-index: 100000;
 	position: relative;
-	border: 0px solid red;
 }
 
 .carousel-pager-item {
@@ -354,6 +359,8 @@ input {
 	color: @navOverColor;
 }
 
+/* BREADCRUMBS */
+
 #portal-breadcrumbs {
 	font-size: 0.7em;
 	margin: 20px 0px 0px 0px;
@@ -370,7 +377,6 @@ input {
 }
 
 /* SUB */
-
 
 #sub {
 	border: 0px solid red !important;
@@ -419,7 +425,6 @@ input {
 #content {
 	line-height: 1.5em;
 	margin: 0px 0px 0px 0px;
-	border: 0px solid black !important;
 	padding: 0px 20px 20px 20px !important;
 	overflow:auto;
 	vertical-align: top !important;
@@ -429,7 +434,6 @@ input {
 }
 
 #sidebar {
-	border: 0px solid blue;
 	line-height: 1.5em;
 	float: left;
 	padding: 25px 15px 0px 15px;
@@ -437,10 +441,6 @@ input {
 	vertical-align: top;
 	background: #c1e8f7;
 	width: 290px;
-}
-
-.social {
-	border: 1px solid red;
 }
 
 .section-kalender-2012 #content {
@@ -451,25 +451,19 @@ input {
 	width: 650px;
 }
 
-#sidebar-left {
-  display: none;
+#content h1 {
+	margin-top: 0.5em;
+	color: #333;
+	text-transform: none;
 }
 
-body#content {
-  margin: 1em;
-}
-#content h1 {
-  margin-top: 0.5em;
-  color: #333;
-  text-transform: none;
-}
 .documentFirstHeading {
-  margin: 20px 0px 20px 0px !important;
-  color: #294665 !important;
-  font-weight: normal;
-  text-transform: none;
-  font-size: 2.8em !important;
-  padding: 0px 0px 0px 0px;
+	margin: 20px 0px 20px 0px !important;
+	color: #294665 !important;
+	font-weight: normal;
+	text-transform: none;
+	font-size: 2.8em !important;
+	padding: 0px 0px 0px 0px;
 }
 
 #content p,
@@ -477,23 +471,28 @@ body#content {
 #content dl,
 dl.portlet p,
 dl.portlet {
-  margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
+
 #content a:link, dl.portlet a:link {
-  color: @linkColor;
+	color: @linkColor;
 }
+
 #content a:visited, dl.portlet a:visited {
-  color: @linkColor;
+	color: @linkColor;
 }
+
 #content a:hover, dl.portlet a:hover {
   color: @linkColor !important;
 }
+
 #content a:target {
   background-color: #ffb;
 }
+
 #content span.link-external a {
-  background: transparent url(link_icon.png) 0px 1px no-repeat;
-  padding: 1px 0px 1px 16px;
+	background: transparent url(link_icon.png) 0px 1px no-repeat;
+	padding: 1px 0px 1px 16px;
 }
 
 #content ul {
@@ -1477,6 +1476,19 @@ div.overlay .formControls a {
 .documentAuthor a {
   color: white !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer-wrapper {
   background: transparent;
