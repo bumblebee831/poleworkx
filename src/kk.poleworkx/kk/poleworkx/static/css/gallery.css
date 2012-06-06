@@ -15,6 +15,9 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .galleria-stage {
     bottom: 55px;
