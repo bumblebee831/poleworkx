@@ -4,7 +4,7 @@
     i18n_domain="kk.poleworkx_event">
 
   <!-- File System Directory Views registration -->
-  <cmf:registerDirectory name="kk.poleworkx_event_scripts"/>
+  <!-- <cmf:registerDirectory name="kk.poleworkx_event_scripts"/> -->
   <cmf:registerDirectory name="kk.poleworkx_event_templates"/>
 
 </configure>
