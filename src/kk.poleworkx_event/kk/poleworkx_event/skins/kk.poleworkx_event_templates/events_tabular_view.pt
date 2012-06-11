@@ -85,7 +85,7 @@
                         	</td>
                         	<td class="price" tal:define = "price python:item_obj.Schema()['price'].getValue(item_obj);
                         									discountedprice python:item_obj.Schema()['discountedprice'].getValue(item_obj)">
-							<p><span tal:content="string:${price} EUR"></span><span tal:condition="discountedprice"> (<span tal:content="string:${discountedprice} EUR"></span>)</span></p>                          
+							<p><span tal:condition="price" tal:content="string:${price} EUR"></span><span tal:condition="discountedprice"> (<span tal:content="string:${discountedprice} EUR"></span>)</span></p>                          
                         	</td>
                         	<td tal:define="avaliable python:item_obj.Schema()['avaliable'].getValue(item_obj);">
 							<a tal:condition="avaliable" tal:attributes="href string:${context/portal_url}/event_register?uid=${item_obj/UID}">ANMELDEN</a>
