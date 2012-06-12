@@ -273,12 +273,12 @@ input {
   background-color: #92dfff;
 }
 .carousel-image img {
-  -webkit-border-radius: 0px 5px 0px 0px;
-  -moz-border-radius: 0px 5px 0px 0px;
-  border-radius: 0px 5px 0px 0px;
+  -webkit-border-radius: 0px 5px 0px 5px;
+  -moz-border-radius: 0px 5px 0px 5px;
+  border-radius: 0px 5px 0px 5px;
   background: #44718f;
   behavior: url(../js/PIE.htc);
-  width: 63	0px;
+  width: 630px;
 }
 #search {
   display: none;
