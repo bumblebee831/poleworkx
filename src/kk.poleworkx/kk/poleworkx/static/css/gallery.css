@@ -9,7 +9,7 @@
 .galleria-container {
     position: relative;
     overflow: hidden;
-	width: 600px !important;
+	width: 570px !important;
 }
 .galleria-container img {
     -moz-user-select: none;
@@ -233,9 +233,12 @@
 
 #galleria{
     margin: 15px auto;
-    box-shadow:0 0 14px 7px #AAA;
-    -moz-box-shadow:0 0 14px 7px #AAA;
-    -webkit-box-shadow:0 0 14px 7px #AAA;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 #content a#galleria-player{
     display: none !important;

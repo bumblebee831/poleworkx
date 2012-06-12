@@ -248,10 +248,7 @@ input {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .carousel-pager {
   margin: -40px 0px 0px 20px;
@@ -703,13 +700,25 @@ div.listingBar {
 div.listingBar .next {
   display: inline-block;
   float: right;
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 div.listingBar .previous {
   display: inline-block;
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2) !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 div.listingBar a {
   display: inline-block;
-  padding: 0.25em 0.5em;
+  padding: 10px;
   border: 0.1em solid #ccc;
 }
 div.listingBar a:hover {
