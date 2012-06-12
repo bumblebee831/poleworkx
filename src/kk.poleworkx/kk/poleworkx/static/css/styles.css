@@ -113,7 +113,10 @@ dt {
   font-weight: bold;
 }
 input {
+  border: 1px solid #999999;
+  border-radius: 5px;
   font-family: 'Arial', sans-serif;
+  padding: 5px !important;
 }
 /* SITE */
 #outer-wrapper {
@@ -125,7 +128,7 @@ input {
   padding: 0px !important;
 }
 #bottom-wrapper {
-  background: url(../images/bottom.gif) no-repeat bottom center transparent;
+  background: url(../images/bottom.png) no-repeat bottom center transparent;
   padding: 0px 0px 160px 0px;
 }
 #inner-wrapper {
@@ -461,14 +464,17 @@ dl.portlet {
 #content a:link,
 dl.portlet a:link {
   color: #336699;
+  text-shadow: 0px 0px 2px #ffffff;
 }
 #content a:visited,
 dl.portlet a:visited {
   color: #336699;
+  text-shadow: 0px 0px 2px #ffffff;
 }
 #content a:hover,
 dl.portlet a:hover {
   color: #336699 !important;
+  text-shadow: 0px 0px 2px #ffffff;
 }
 #content a:target {
   background-color: #ffb;
@@ -602,8 +608,12 @@ dl.portlet li {
 }
 table.listing,
 table.plain {
-  border-spacing: 0;
-  border-collapse: collapse;
+  border-spacing: 3px !important;
+  border-collapse: separate !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 table.invisible td,
 table.invisible th,
@@ -616,15 +626,11 @@ table.listing th {
 }
 table.plain th,
 table.plain td {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd !important;
 }
 table.listing td.listingCheckbox,
 table.listing th.listingCheckbox {
   text-align: center;
-}
-table.listing {
-  border-left: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 table.listing .top {
   border-left: 1px solid #ddd;
@@ -634,11 +640,12 @@ table.listing .top {
 table.listing th {
   text-align: left;
   color: #666;
-  border: 0.1em solid #e7e7e7;
-  border-style: solid solid none;
+  border: 0px solid red;
+  border-style: solid;
   background: #ddd;
-  padding: 5px !important;
+  padding: 6px !important;
   font-size: 1em !important;
+  text-shadow: 0px 0px 2px #ffffff;
 }
 table.listing tr.odd th {
   border: 0.1em solid #fff;
@@ -660,8 +667,8 @@ table.listing tbody tr.odd td {
   background: #eee;
 }
 table.listing td {
-  border-right: 1px solid #ddd;
-  padding: 5px !important;
+  border-right: 0px solid #ddd;
+  padding: 6px !important;
   font-size: 1em !important;
 }
 table.listing a {
@@ -679,8 +686,9 @@ table.vertical th {
   text-align: right;
 }
 table.vertical td {
-  border-top: 0.1em solid #e7e7e7;
+  border-top: 0px solid #e7e7e7;
   padding: 0.5em;
+  background: #ecf3f6 !important;
 }
 table.grid td,
 table.grid th {
@@ -1266,7 +1274,9 @@ textarea:focus {
   background-color: #ffffe0;
 }
 #content textarea {
-  font: 100% Monaco, "Courier New", Courier, monospace;
+  border: 1px solid #999999;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px !important;
 }
 #content select {
   vertical-align: top;
@@ -1281,6 +1291,11 @@ textarea:focus {
 }
 label {
   font-weight: bold;
+  padding: 0px 0px 0px 10px;
+}
+.formQuestion {
+  font-weight: bold;
+  padding: 0px 0px 0px 5px !important;
 }
 #content optgroup {
   font-style: normal;
@@ -1772,7 +1787,7 @@ dd.portletItem .navTreeItem a {
   text-align: center;
 }
 .even {
-  background: transparent;
+  background: #ecf3f6;
 }
 #portal-sitemap a {
   padding: 7px 0px 5px 0px !important;
@@ -1801,4 +1816,26 @@ dd.portletItem .navTreeItem a {
 }
 #parent-fieldname-leadImage {
   display: none !important;
+}
+.ArchetypesMultiSelectionValue {
+  line-height: 3em;
+  border: 1px dotted #ccc;
+  border-width: 0px 0px 1px 0px;
+}
+.ArchetypesMultiSelectionValue input .blurrable {
+  border: 1px solid red !important;
+  padding: 0px 20px 0px 0px;
+}
+.context,
+.formControls .actionButtons .button,
+.documentEditable * .context,
+.standalone,
+.documentEditable * .standalone,
+#form-buttons-submit,
+#form-buttons-cancel {
+  border: 1px solid #999999;
+  border-radius: 10px 10px 10px 10px;
+  margin: 20px 10px 0 0 !important;
+  padding: 10px !important;
+  text-transform: uppercase;
 }

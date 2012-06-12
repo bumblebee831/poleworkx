@@ -4,8 +4,8 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
-    
-    <theme href="termine.html" if-path="/kurse-workshops/termine-anmeldung/" />
+    <theme href="termine.html" if-path="kurse-workshops/termine-anmeldung/" />
+    <!-- <theme href="termine.html" if-path="poleworkx/kurse-workshops/termine-anmeldung/" /> -->
     <theme href="theme.html" css:if-content="#visual-portal-wrapper" />
     
     <!-- Apply rules to a standard Plone Webpage -->
