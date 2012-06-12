@@ -1739,3 +1739,6 @@ dd.portletItem .navTreeItem a {
 .BelowPortletManager3 {
   display: none;
 }
+#parent-fieldname-leadImage {
+  display: none !important;
+}
