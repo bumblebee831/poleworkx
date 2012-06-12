@@ -121,7 +121,7 @@ input {
   background: url(../images/top.png) no-repeat top center transparent;
   width: 100%;
   min-height: 100%;
-  border-top: 1px solid #294665;
+  border-top: 0px solid #294665;
   padding: 0px !important;
 }
 #bottom-wrapper {
@@ -129,7 +129,33 @@ input {
   padding: 0px 0px 160px 0px;
 }
 #inner-wrapper {
-  background: url(../images/col.gif) repeat-y top center transparent;
+  background: #b1e3f4;
+  /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IxZTNmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2YzZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b1e3f4), color-stop(100%, #ecf3f6));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  /* IE10+ */
+
+  background: linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#b1e3f4', endColorstr='#ecf3f6', GradientType=0);
+  /* IE6-8 */
+
   width: 960px;
   margin: 20px auto 20px auto !important;
   -webkit-border-radius: 5px;
@@ -162,8 +188,8 @@ input {
 #logo {
   margin: 0px;
   text-align: left;
-  padding: 10px 0px 195px 0px;
-  background: url(../images/logo.gif) no-repeat 0px 17px #b1e3f4;
+  padding: 10px 0px 194px 0px;
+  background: url(../images/logo.png) no-repeat 0px 17px transparent;
   border: 0px solid red;
   -webkit-border-radius: 5px 0px 0px 0px;
   -moz-border-radius: 5px 0px 0px 0px;
@@ -370,6 +396,12 @@ input {
 .content-wrapper {
   border: 0px solid green !important;
 }
+.inhalt {
+  width: 620px;
+  border: 0px solid red;
+  float: right;
+  padding: 0px 20px 20px 0px !important;
+}
 #content {
   line-height: 1.5em;
   margin: 0px 0px 0px 0px;
@@ -378,7 +410,7 @@ input {
   vertical-align: top !important;
   font-size: 0.8em;
   float: right;
-  width: 600px;
+  width: %;
 }
 #sidebar {
   line-height: 1.5em;
@@ -386,7 +418,7 @@ input {
   padding: 25px 15px 0px 15px;
   margin: 0px 0px 0px 0px;
   vertical-align: top;
-  background: #c1e8f7;
+  background: transparent;
   width: 290px;
 }
 .section-kalender-2012 #content {
@@ -526,8 +558,13 @@ dl.portlet li {
   font-weight: bold;
   font-size: 1.5em;
 }
-#content img.tileImage,
 #content div.newsImageContainer {
+  float: left;
+  margin: 0px;
+  border: 0px dotted #cccccc;
+  padding: 0px;
+}
+#content img.tileImage {
   float: left;
   margin: 0px 20px 20px 0px;
   border: 1px dotted #cccccc;
@@ -563,7 +600,7 @@ table.plain td,
 table.plain th,
 table.listing td,
 table.listing th {
-  padding: 0.5em 1em;
+  padding: 10px 10px 10px 0px;
   vertical-align: top;
 }
 table.plain th,
@@ -589,8 +626,8 @@ table.listing th {
   border: 0.1em solid #e7e7e7;
   border-style: solid solid none;
   background: #ddd;
-  padding: 4px !important;
-  font-size: 0.8em !important;
+  padding: 5px !important;
+  font-size: 1em !important;
 }
 table.listing tr.odd th {
   border: 0.1em solid #fff;
@@ -613,8 +650,8 @@ table.listing tbody tr.odd td {
 }
 table.listing td {
   border-right: 1px solid #ddd;
-  padding: 4px !important;
-  font-size: 0.7em !important;
+  padding: 5px !important;
+  font-size: 1em !important;
 }
 table.listing a {
   border: none;
