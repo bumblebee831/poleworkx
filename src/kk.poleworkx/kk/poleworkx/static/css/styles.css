@@ -108,7 +108,10 @@ dt {
 }
 input {
   border: 1px solid #999999;
-  border-radius: 5px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
   font-family: 'Arial', sans-serif;
   padding: 5px !important;
 }
@@ -710,7 +713,8 @@ table.grid th {
 }
 div.listingBar {
   font-size: 80%;
-  margin: 1em 0;
+  margin: 20px 5px 20px 5px;
+  border: 0px solid red !important;
 }
 div.listingBar .next {
   display: inline-block;
@@ -721,6 +725,8 @@ div.listingBar .next {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  background: white;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
 }
 div.listingBar .previous {
   display: inline-block;
@@ -730,6 +736,8 @@ div.listingBar .previous {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  background: white;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
 }
 div.listingBar a {
   display: inline-block;
@@ -1230,9 +1238,10 @@ img.image-inline {
   -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
 }
 .portlet img.image-left,
 .portlet img.image-right,
@@ -1240,6 +1249,10 @@ img.image-inline {
 .portlet img.image-inline {
   box-shadow: none;
   border: none !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
 }
 dd.image-caption {
   text-align: left;
@@ -1282,7 +1295,10 @@ textarea:focus {
 }
 #content textarea {
   border: 1px solid #999999;
-  border-radius: 5px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
   padding: 5px !important;
 }
 #content select {
