@@ -416,12 +416,12 @@ input {
 }
 .inhalt-termine {
   border: 0px solid red;
-  padding: 0px 20px 20px 10px !important;
+  padding: 0px 20px 20px 0px !important;
   float: right;
 }
 #content {
   line-height: 1.8em;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 20px !important;
   padding: 0px 20px 20px 20px !important;
   overflow: auto;
   vertical-align: top !important;
@@ -444,12 +444,6 @@ input {
   vertical-align: top;
   background: transparent;
   width: 290px;
-}
-.section-kalender-2012 #content {
-  padding: 0px 0px 0px 0px !important;
-}
-.section-kontakt #content {
-  width: 650px;
 }
 #content h1 {
   margin-top: 0.5em;
@@ -653,7 +647,7 @@ table.listing th {
   border: 0px solid red;
   border-style: solid;
   background: #ddd;
-  padding: 6px !important;
+  padding: 5px !important;
   font-size: 1em !important;
   text-shadow: 0px 0px 2px #ffffff;
 }
@@ -678,7 +672,7 @@ table.listing tbody tr.odd td {
 }
 table.listing td {
   border-right: 0px solid #ddd;
-  padding: 6px !important;
+  padding: 5px !important;
   font-size: 1em !important;
 }
 table.listing a {
