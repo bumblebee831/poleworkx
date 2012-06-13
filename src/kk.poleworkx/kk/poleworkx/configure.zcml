@@ -11,7 +11,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="kk.poleworkx"
+      title="PoleworX Diazo Theme"
       directory="profiles/default"
       description="Installs Diazo Theme for Poleworx Website"
       provides="Products.GenericSetup.interfaces.EXTENSION"

@@ -69,13 +69,7 @@ h1 {
 }
 h2 {
   font-size: 1.75em;
-}
-.section-presse-tv h2 {
-  font-size: 1.75em;
-  margin: 30px 0px 30px 0px;
-  border: 1px solid #336699;
-  border-width: 1px 0px 1px 0px;
-  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
 }
 h3 {
   font-size: 1.25em;
@@ -127,17 +121,26 @@ input {
   border-top: 0px solid #294665;
   padding: 0px !important;
 }
+*html #outer-wrapper {
+  margin: 0px !important;
+  background: transparent;
+  width: 100%;
+  min-height: 100%;
+  border-top: 0px solid #294665;
+  padding: 0px !important;
+}
 #bottom-wrapper {
   background: url(../images/bottom.png) no-repeat bottom center transparent;
+  padding: 0px 0px 160px 0px;
+}
+*html #bottom-wrapper {
+  background: transparent;
   padding: 0px 0px 160px 0px;
 }
 #inner-wrapper {
   background: #b1e3f4;
   /* Old browsers */
 
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IxZTNmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2YzZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
   /* FF3.6+ */
 
@@ -176,7 +179,6 @@ input {
   -webkit-border-radius: 0px 5px 0px 0px;
   -moz-border-radius: 0px 5px 0px 0px;
   border-radius: 0px 5px 0px 0px;
-  behavior: url(../js/PIE.htc);
 }
 #main-content {
   padding: 0px;
@@ -198,7 +200,6 @@ input {
   -webkit-border-radius: 5px 0px 0px 0px;
   -moz-border-radius: 5px 0px 0px 0px;
   border-radius: 5px 0px 0px 0px;
-  behavior: url(../js/PIE.htc);
 }
 #logo h1 {
   color: #ccc;
@@ -252,6 +253,7 @@ input {
   -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 0px 0px 0px 0px;
+  behavior: url(../js/ie-css3.htc);
 }
 .carousel-pager {
   margin: -40px 0px 0px 20px;
@@ -282,8 +284,11 @@ input {
   -moz-border-radius: 5px;
   border-radius: 5px;
   background: #44718f;
-  behavior: url(../js/PIE.htc);
+  behavior: url(../js/ie-css3.htc);
   width: 610px;
+  position: absolute;
+  border: 0px solid red;
+  z-index: 10000000 !important;
 }
 #search {
   display: none;
@@ -414,7 +419,7 @@ input {
   float: right;
 }
 #content {
-  line-height: 1.5em;
+  line-height: 1.8em;
   margin: 0px 0px 0px 10px;
   padding: 0px 20px 20px 20px !important;
   overflow: auto;
@@ -1266,7 +1271,7 @@ fieldset,
   font-weight: bold;
 }
 div.formControls {
-  margin: 1em;
+  margin: 1em 1em 1em 0em !important;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -1275,7 +1280,7 @@ textarea:focus {
 }
 #content textarea {
   border: 1px solid #999999;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px;
   padding: 5px !important;
 }
 #content select {
@@ -1834,8 +1839,14 @@ dd.portletItem .navTreeItem a {
 #form-buttons-submit,
 #form-buttons-cancel {
   border: 1px solid #999999;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px;
   margin: 20px 10px 0 0 !important;
   padding: 10px !important;
   text-transform: uppercase;
+}
+.portletGallery {
+  border: 1px solid red;
+}
+.image-container img {
+  border: 1px solid red;
 }
