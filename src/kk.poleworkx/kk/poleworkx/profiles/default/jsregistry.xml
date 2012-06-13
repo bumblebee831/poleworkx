@@ -1,19 +1,4 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
-    <javascript
-    id="++theme++kk.poleworkx/js/myflowplayerlist.js"
-    cacheable="True" compression="safe" cookable="False"
-    enabled="True" expression="request/HTTP_X_THEME_ENABLED | nothing"  inline="False"/>
-    <javascript
-    id="++theme++kk.poleworkx/js/twitter.js"
-    cacheable="True" compression="safe" cookable="False"
-    enabled="True" expression="request/HTTP_X_THEME_ENABLED | nothing"  inline="False"/>
-    <javascript
-    id="++theme++kk.poleworkx/js/modernizr.js"
-    cacheable="True" compression="safe" cookable="False"
-    enabled="True" expression="request/HTTP_X_THEME_ENABLED | nothing"  inline="False"/>
-    <javascript
-    id="++theme++kk.poleworkx/js/selectivizr.js"
-    cacheable="True" compression="safe" cookable="False"
-    enabled="True" expression="request/HTTP_X_THEME_ENABLED | nothing"  inline="False"/>
+
 </object>

@@ -138,39 +138,39 @@ input {
   padding: 0px 0px 160px 0px;
 }
 #inner-wrapper {
-  background: #b1e3f4;
+  background: #b3e3f4;
   /* Old browsers */
 
-  background: -moz-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  background: -moz-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* FF3.6+ */
 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b1e3f4), color-stop(100%, #ecf3f6));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b3e3f4), color-stop(52%, #ecf3f6));
   /* Chrome,Safari4+ */
 
-  background: -webkit-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  background: -webkit-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* Chrome10+,Safari5.1+ */
 
-  background: -o-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  background: -o-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* Opera 11.10+ */
 
-  background: -ms-linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  background: -ms-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* IE10+ */
 
-  background: linear-gradient(top, #b1e3f4 0%, #ecf3f6 100%);
+  background: linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* W3C */
-
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#b1e3f4', endColorstr='#ecf3f6', GradientType=0);
-  /* IE6-8 */
 
   width: 960px;
   margin: 20px auto 20px auto !important;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
   padding: 20px 0px 0px 0px;
+  z-index: 2000;
+  position: relative;
 }
 #header-wrapper {
   margin: 0px auto !important;
@@ -249,11 +249,7 @@ input {
 /* CAROUSEL */
 .carousel {
   margin: 0px 20px 0px 0px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   padding: 0px 0px 0px 0px;
-  behavior: url(../js/ie-css3.htc);
 }
 .carousel-pager {
   margin: -40px 0px 0px 20px;
@@ -263,9 +259,10 @@ input {
 .carousel-pager-item {
   font-size: 0.6em;
   text-decoration: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
 }
 .carousel-pager-item,
 .carousel-pager-button-prev,
@@ -280,15 +277,16 @@ input {
   background-color: #92dfff;
 }
 .carousel-image img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
   background: #44718f;
-  behavior: url(../js/ie-css3.htc);
   width: 610px;
-  position: absolute;
-  border: 0px solid red;
-  z-index: 10000000 !important;
+  position: relative;
 }
 #search {
   display: none;
@@ -427,9 +425,13 @@ input {
   font-size: 0.8em;
   width: %;
   background: none repeat scroll 0 0 #FFFFFF;
-  border: 0 none;
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 0 0 5px rgba(50, 50, 50, 0.2);
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
 }
 #sidebar {
   line-height: 1.5em;
@@ -1387,6 +1389,7 @@ tr.selected {
 body.template-logged_out #content,
 body.template-login_form #content,
 .pb-ajax #login-form {
+  padding: 40px !important;
   text-align: center;
 }
 #fieldset-openid-login input,
@@ -1590,9 +1593,10 @@ div.overlay .formControls a {
   padding: 0px;
   color: #333333 !important;
   background: #ffffff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
   -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
