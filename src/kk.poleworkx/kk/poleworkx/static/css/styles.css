@@ -421,8 +421,8 @@ input {
 }
 #content {
   line-height: 1.8em;
-  margin: 0px 0px 0px 20px !important;
-  padding: 0px 20px 20px 20px !important;
+  margin: 0px 0px 0px 10px !important;
+  padding: 0px 20px 20px 18px !important;
   overflow: auto;
   vertical-align: top !important;
   font-size: 0.8em;
