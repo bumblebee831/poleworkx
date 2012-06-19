@@ -1,7 +1,7 @@
 # Example code:
 
 # Import a standard function, and get the HTML request and response objects.
-events = context.portal_catalog(portal_type="Event", event_avaliable=True, sort_on="sortable_title")
+events = context.portal_catalog(portal_type="Event", event_avaliable=True, sort_on="start", sort_order="descending")
 toLocalizedTime = context.restrictedTraverse("@@plone").toLocalizedTime
 options = []
 for event in events:

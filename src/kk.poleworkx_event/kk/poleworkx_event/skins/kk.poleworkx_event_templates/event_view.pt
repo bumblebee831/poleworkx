@@ -141,7 +141,7 @@
                     <tr tal:condition="context/avaliable">
                         <th>Anmeldung</th>
                         <td class="avalaible">
-							<a tal:condition="context/avaliable" tal:attributes="href string:${context/portal_url}/event_register?uid=${context/UID}">ANMELDEN</a>
+							<a tal:condition="context/avaliable" tal:attributes="href string:${context/portal_url}/kurse-workshops/termine-anmeldung/event_register?uid=${context/UID}">ANMELDEN</a>
 
                         </td>
                     </tr>

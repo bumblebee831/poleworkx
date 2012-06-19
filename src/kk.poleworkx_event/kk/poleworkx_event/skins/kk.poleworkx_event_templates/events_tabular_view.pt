@@ -88,7 +88,7 @@
 							<p><span tal:condition="price" tal:content="string:${price} EUR"></span><span tal:condition="discountedprice"> (<span tal:content="string:${discountedprice} EUR"></span>)</span></p>                          
                         	</td>
                         	<td tal:define="avaliable python:item_obj.Schema()['avaliable'].getValue(item_obj);">
-							<a tal:condition="avaliable" tal:attributes="href string:${context/portal_url}/event_register?uid=${item_obj/UID}">ANMELDEN</a>
+							<a tal:condition="avaliable" tal:attributes="href string:${context/portal_url}/kurse-workshops/termine-anmeldung/event_register?uid=${item_obj/UID}">ANMELDEN</a>
                         	</td>                        	
                     </tr>
 
