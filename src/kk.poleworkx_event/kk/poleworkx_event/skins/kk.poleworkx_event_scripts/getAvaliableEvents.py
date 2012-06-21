@@ -1,7 +1,8 @@
 # Example code:
-
+from DateTime import DateTime
+now = DateTime()
 # Import a standard function, and get the HTML request and response objects.
-events = context.portal_catalog(portal_type="Event", event_avaliable=True, sort_on="start", sort_order="descending")
+events = context.portal_catalog(portal_type="Event", event_avaliable=True, sort_on="start", sort_order="ascending", end = { "query": [now,],"range": "min" })
 toLocalizedTime = context.restrictedTraverse("@@plone").toLocalizedTime
 options = []
 for event in events:
