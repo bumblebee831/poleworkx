@@ -1,0 +1,17 @@
+poleworkx.shopcontent Installation
+----------------------------------
+
+To install poleworkx.shopcontent using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``poleworkx.shopcontent`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        poleworkx.shopcontent
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
