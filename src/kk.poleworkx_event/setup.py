@@ -25,7 +25,7 @@ setup(name='kk.poleworkx_event',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'archetypes.schemaextender', 
+          'archetypes.schemaextender',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
@@ -34,6 +34,6 @@ setup(name='kk.poleworkx_event',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
+#      setup_requires=["PasteScript"],
+#      paster_plugins=["ZopeSkel"],
       )
