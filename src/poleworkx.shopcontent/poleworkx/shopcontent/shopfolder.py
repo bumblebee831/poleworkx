@@ -33,7 +33,7 @@ class ShopFolder(dexterity.Container):
     grok.implements(IShopFolder)
 
 
-class View(grok.View):
+class <View(grok.View):
     grok.context(IShopFolder)
     grok.require('zope2.View')
     grok.name('view')

@@ -1,4 +1,11 @@
 Introduction
 ===============================
 
-This repository holds the configuration and site packages for the poleworks application.
+This repository holds the configuration and site packages for the poleworks
+application.
+
+Notes:
+======
+
+The whole setup has been refactored to now no longer use getpaid packages. In
+order to use it efficiently checkout the development branch.
