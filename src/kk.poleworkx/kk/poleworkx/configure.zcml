@@ -9,6 +9,8 @@
 
   <five:registerPackage package="." initialize=".initialize" />
 
+  <includeDependencies package="." />
+
   <genericsetup:registerProfile
       name="default"
       title="PoleworX Diazo Theme"
@@ -18,6 +20,8 @@
       />
 
   <plone:static
-       type="theme" directory="static" />
+       type="theme"
+       directory="static"
+        />
   
 </configure>
