@@ -8,4 +8,7 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
+  <object name="poleworkx.shopcontent.product" meta_type="Dexterity FTI" />
+  <object name="poleworkx.shopcontent.productcategory" meta_type="Dexterity FTI" />
+  <object name="poleworkx.shopcontent.shopfolder" meta_type="Dexterity FTI" />
 </object>
