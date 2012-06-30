@@ -24,3 +24,4 @@ var
 etc/**/*
 .DS_Store
 *.less
+src/kk.shopified
