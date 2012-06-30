@@ -27,6 +27,22 @@ class IProduct(form.Schema, IImageScaleTraversable):
     """
     A simple product type
     """
+    productcode = schema.TextLine(
+        title=_(u"Article ID"),
+        description=_(u"Please enter a unique article id / product code that "
+                      u"will be passed to the payment processor"),
+        required=True,
+    )
+    image = NamedBlobImage(
+        title=_(u"Main Product Image"),
+        description=_(u"Upload main produt image to be displayed in product "
+                      u"listings and search result"),
+        required="True",
+    )
+    text = RichText(
+        title=_(u"Product Information"),
+        required=True,
+    )
 
 
 class Product(dexterity.Container):

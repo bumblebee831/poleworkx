@@ -27,4 +27,18 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <plone:behavior
+      title="Buyable"
+      description="Mark a product as buyable"
+      provides=".buyablebahavior.IBuyable"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+
+  <plone:behavior
+      title="Buyable Information"
+      description="Adds the ability to assign order details to a product"
+      provides=".buyablebehavior.IBuyableInformation"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+
 </configure>
