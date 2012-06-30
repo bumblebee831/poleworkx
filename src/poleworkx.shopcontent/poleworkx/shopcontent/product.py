@@ -37,7 +37,7 @@ class IProduct(form.Schema, IImageScaleTraversable):
         title=_(u"Main Product Image"),
         description=_(u"Upload main produt image to be displayed in product "
                       u"listings and search result"),
-        required="True",
+        required=True,
     )
     text = RichText(
         title=_(u"Product Information"),

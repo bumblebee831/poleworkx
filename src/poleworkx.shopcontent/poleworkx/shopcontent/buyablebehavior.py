@@ -44,7 +44,7 @@ class IBuyableInformation(form.Schema):
     )
     weight = schema.TextLine(
         title=_(u"Weight"),
-        description=-(u"Enter weight information to warn for potential higher "
+        description=_(u"Enter weight information to warn for potential higher "
                       u"shipping costs."),
         required=False,
     )
