@@ -9,14 +9,12 @@ from plone.app.textfield import RichText
 
 from Products.CMFCore.utils import getToolByName
 
-from plone.app.contentlisting import IContentListing
+from plone.app.contentlisting.interfaces import IContentListing
 
-from poleworkx.shopcontent.productcategory import IProduct
+from poleworkx.shopcontent.product import IProduct
 
 from poleworkx.shopcontent import MessageFactory as _
 
-
-# Interface class; used to define content-type schema.
 
 class IProductCategory(form.Schema, IImageScaleTraversable):
     """
@@ -26,6 +24,11 @@ class IProductCategory(form.Schema, IImageScaleTraversable):
         title=_(u"Category Image"),
         description=_(u"Upload image usable in the preview of the category"),
         required=True,
+    )
+    text = RichText(
+        title=_(u"Main Text"),
+        description=_(u"Enter an optional welcome text for this shop"),
+        required=False,
     )
 
 
@@ -58,15 +61,11 @@ class View(grok.View):
         return results
 
     def products(self):
-        context = aq_inner(self.context)
-        catalog = getToolByName(context, 'portal_catalog')
-        results = catalog(object_provides=IProduct.__identifier__,
-                          path=dict(query='/'.join(context.getPhysicalPath()),
-                                    depth=1),
-                          sort_on='getObjPositionInParent',
-                          review_state='published')
-        resultlist = IContentListing(results)
-        return resultlist
+        query = self._base_query()
+        obj_provides = IProduct.__identifier__
+        query['object_provides'] = obj_provides
+        results = self._get_data(query)
+        return results
 
     def _base_query(self):
         context = aq_inner(self.context)

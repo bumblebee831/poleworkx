@@ -7,11 +7,74 @@
       i18n:domain="poleworkx.shopcontent">
 <body>
 
-<metal:main fill-slot="content-core">
-  <metal:content-core define-macro="content-core">
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
 
-    <p>Product listing inserted here</p>
-    
+  <section id="shop-view">
+
+    <h1 class="documentFirstHeading"
+      tal:content="context/Title" />
+
+    <p class="documentDescription"
+      tal:condition="context/Description"
+      tal:content="context/Description" />
+
+    <div id="content-core">
+
+      <div tal:condition="context/text"
+        class="shop-summary"
+        tal:content="structure context/text/output" />
+
+      <tal:categories tal:condition="view/listing_matrix">
+        <section class="shop-listing"
+            tal:define="rows view/listing_matrix;
+                        is_cat_listing view/has_categories"
+            tal:attributes="class python:is_cat_listing and 'shop-listing shop-categories' or 'shop-listing shop-products'">
+          <div tal:repeat="row rows">
+            <div class="row">
+              <tal:block tal:repeat="cell row">
+                <div class="tileItem"
+                    tal:define="oddrow repeat/cell/odd;
+                                item cell/item"
+                    tal:attributes="class python:oddrow and 'cell position-1:2 width-1:2' or 'cell position-0 width-1:2'">
+                  <div class="shop-item">
+                    <div class="shop-item-image thumbnail"
+                        tal:condition="exists:item/image">
+                      <img tal:define="item_obj item/getObject;
+                                       scale item_obj/@@images"
+                          tal:condition="item_obj/image"
+                          tal:replace="structure python: scale.scale('image',
+                                       scale='mini').tag()" />
+                    </div>
+                    <div class="shop-item-caption">
+                      <h2 tal:content="item/Title" />
+                      <p tal:content="item/Description" />
+                      <tal:price tal:condition="exists:item/price">
+                        <span tal:replace="item/price" /> &euro;
+                      </tal:price>
+                      <a href="" class="link-more"
+                        i18n:translate=""
+                        tal:condition="view/has_categories"
+                        tal:attributes="href item/getURL">
+                        Show products</a>
+                      <a href="" class="link-more"
+                        i18n:translate=""
+                        tal:condition="view/has_products"
+                        tal:attributes="href item/getURL">
+                        Details</a>
+                    </div>
+                  </div>
+                </div>
+              </tal:block>
+            </div>
+            <div class="visualClear"><!-- --></div>
+          </div>
+        </section>
+      </tal:categories>
+
+    </div>
+
+  </section>
   </metal:content-core>
 </metal:main>
 
