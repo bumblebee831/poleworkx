@@ -29,27 +29,36 @@
       <div tal:condition="context/text"
         tal:content="structure context/text/output" />
 
-      <tal:categories tal:condition="has_categories">
+      <tal:categories tal:condition="view/has_categories">
         <section id="shop-categories"
-            tal:define="items view/categories">
-            <article class="tielItem"
-                tal:repeat="item/items">
-
-              <h2 tal:content="item/Title" />
-              <div class="thumbnail">
-                <img tal:define="item_obj item/getObject;
-                                 scale item_obj/@@images"
-                    tal:condition="item_obj/image"
-                    tal:replace="structure python: scale.scale('image',
-                                 scale='mini').tag()" />
-              </div>
-              <p tal:content="item/Description" />
-              <a href="" class="link-more"
-                i18n:translate=""
-                tal:attributes="href item/getURL">
-                Show products</a>
-
-            </article>
+            tal:define="rows view/listing_matrix">
+          <div tal:repeat="row rows">
+            <div class="row">
+              <tal:block tal:repeat="cell row">
+                <div class="tileItem"
+                    tal:define="oddrow repeat/cell/odd;
+                                item cell/item"
+                    tal:attributes="class python:oddrow and 'cell position-1:2 width-1:2' or 'cell position-0 width-1:2'">
+    
+                  <h2 tal:content="item/Title" />
+                  <div class="thumbnail" tal:condition="exists:item/image">
+                    <img tal:define="item_obj item/getObject;
+                                     scale item_obj/@@images"
+                        tal:condition="item_obj/image"
+                        tal:replace="structure python: scale.scale('image',
+                                     scale='mini').tag()" />
+                  </div>
+                  <p tal:content="item/Description" />
+                  <a href="" class="link-more"
+                    i18n:translate=""
+                    tal:attributes="href item/getURL">
+                    Show products</a>
+    
+                </div>
+              </tal:block>
+            </div>
+            <div class="visualClear"><!-- --></div>
+          </div>
         </section>
       </tal:categories>
 

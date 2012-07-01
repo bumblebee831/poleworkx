@@ -35,7 +35,7 @@ class IShopFolder(form.Schema):
     )
     featuredProducts = RelationList(
         title=_(u"Featured Products"),
-        description=-(u"Optional selection for featured products These "
+        description=_(u"Optional selection for featured products These "
                       u"items will be presented above the product listing"),
         default=[],
         value_type=RelationChoice(
@@ -60,7 +60,7 @@ class View(grok.View):
         self.has_products = len(self.products()) > 0
 
     def listing_matrix(self):
-        if self.has_products():
+        if self.has_products:
             items = self.products()
         else:
             items = self.categories()

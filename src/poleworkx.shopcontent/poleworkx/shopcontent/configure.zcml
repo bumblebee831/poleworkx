@@ -30,7 +30,7 @@
   <plone:behavior
       title="Buyable"
       description="Mark a product as buyable"
-      provides=".buyablebahavior.IBuyable"
+      provides=".buyablebehavior.IBuyable"
       for="plone.dexterity.interfaces.IDexterityContent"
       />
 

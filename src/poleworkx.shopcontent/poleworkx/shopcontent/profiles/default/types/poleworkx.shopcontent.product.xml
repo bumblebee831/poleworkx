@@ -24,6 +24,8 @@
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+     <element value="poleworkx.shopcontent.buyablebehavior.IBuyable" />
+     <element value="poleworkx.shopcontent.buyablebehavior.IBuyableInformation" />
    </property>
 
   <!-- View information -->
