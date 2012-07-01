@@ -7,24 +7,10 @@
       i18n:domain="poleworkx.shopcontent">
 <body>
 
-<tal:comment tal:condition="nothing">
-    This is a sample view template. It will not be used for rendering the
-    content unless activated by creation of a view class with a matching name.
-    
-    Note that we're using Plone 4 macros. Replace them with Plone 3 macros
-    if needed.
-</tal:comment>
-
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
 
-    <h2>
-        Rendered from 
-        productcategory_templates/<span tal:replace="template/id" />
-    </h2>
-
-
-    <div tal:content="context/Title">Title inserted here</div>
+    <p>Product listing inserted here</p>
     
   </metal:content-core>
 </metal:main>

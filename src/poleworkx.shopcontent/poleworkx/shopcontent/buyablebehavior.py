@@ -18,7 +18,7 @@ class IBuyableInformation(form.Schema):
     form.fieldset(
         'buyable',
         label=u"Buyable Details",
-        fields=['price', 'sales_price', 'sales_info', 'packaging'
+        fields=['price', 'sales_price', 'sales_info', 'packaging',
                 'weight'],
     )
     price = schema.Float(
