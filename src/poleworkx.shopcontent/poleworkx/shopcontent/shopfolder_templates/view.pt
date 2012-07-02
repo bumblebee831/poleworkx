@@ -52,7 +52,7 @@
                     <div class="shop-item-caption">
                       <h2 tal:content="item/Title" />
                       <p tal:content="item/Description" />
-                      <tal:price tal:condition="item/price">
+                      <tal:price tal:condition="exists:item/price">
                         <span tal:replace="item/price" /> &euro;
                       </tal:price>
                       <a href="" class="link-more"
