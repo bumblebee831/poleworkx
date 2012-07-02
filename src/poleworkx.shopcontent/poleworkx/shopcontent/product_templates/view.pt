@@ -33,36 +33,33 @@
 
       <form action="" method="post"
           tal:define="context_url context/absolute_url"
-          tal:attributes="action request/URL">
+          tal:attributes="action rerquest/URL">
           <div class="field offset4 span4">
           <label for="quantity"
             i18n:translate="">Amount</label>
           <input type="text"
             name="quantity"
-            size="2"
             tal:attributes="value string:1;
                             style string:width:20px;" />
           </div>
           <input tal:condition="not:context/sales_price"
-            type="hidden"
             name="price"
             tal:attributes="value context/price" />
           <input tal:condition="context/sales_price"
-            type="hidden"
             name="price"
             tal:attributes="value context/sales_price" />
           <input tal:condition="context/productcode"
-            type="hidden"
             name="productcode"
             tal:attributes="value context/productcode" />
           <div class="xform-actions offset4 span4">
             <input id="form-button-submit"
               class="btn btn-cta btn-large"
               type="submit"
-              name="form.buttons.submit"
+              name="form.button.Submit"
               tal:attributes="value string:Order now"
               value="Order now" />
           </div>
+          <span tal:replace="structure context/@@authenticator/authenticator"/>
       </form>
 
     </article>
