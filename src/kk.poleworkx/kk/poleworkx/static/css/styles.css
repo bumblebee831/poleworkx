@@ -366,6 +366,16 @@ input {
   width: 610px;
   float: right;
 }
+.section-shop #portal-breadcrumbs {
+  font-size: 0.7em;
+  margin: 20px 0px 20px 20px !important;
+  padding: 0px 0px 0px 0px;
+  background: transparent;
+  color: #333;
+  border: 0px solid red;
+  width: 940px !important;
+  float: left;
+}
 #portal-breadcrumbs a {
   color: #333;
 }
@@ -403,6 +413,11 @@ input {
 #subnav-poleworkx-tank-top a,
 #sub #subnav-junggesellinnenabschied a {
   background: none;
+}
+/* SHOP */
+#shop-view {
+  border: 0px solid red;
+  width: 100% !important;
 }
 /* CONTENT */
 .content-wrapper {
