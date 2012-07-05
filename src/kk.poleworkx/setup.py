@@ -27,6 +27,7 @@ setup(name='kk.poleworkx',
           'setuptools',
           'plone.app.theming',
           'plone.app.themingplugins',
+          'collective.viewlet.navbar',
       ],
       entry_points="""
       # -*- Entry points: -*-
