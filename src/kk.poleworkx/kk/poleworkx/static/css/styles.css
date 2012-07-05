@@ -419,6 +419,9 @@ input {
   border: 0px solid red;
   width: 100% !important;
 }
+.shop-summary {
+  margin: 0px 10px 20px 10px;
+}
 .shop-item {
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
@@ -430,8 +433,11 @@ input {
   background: white;
   position: relative;
   height: 320px;
-  padding: 20px;
+  padding: 30px;
   margin: 0px 0px 20px 0px;
+}
+.shop-item-caption h2 {
+  font-size: 1.4em;
 }
 .shop-item-image {
   height: 200px;
@@ -441,6 +447,7 @@ input {
   border-radius: 5px !important;
   padding: 0px;
   margin: 0px 0px 10px 0px;
+  width: 358px;
 }
 .shop-item-image img {
   -webkit-border-radius: 5px !important;
@@ -460,7 +467,7 @@ input {
 .inhalt-termine {
   border: 0px solid red;
   padding: 0px 20px 20px 10px !important;
-  float: right;
+  float: left;
 }
 #content {
   line-height: 1.8em;
@@ -1619,9 +1626,9 @@ div.overlay .formControls a {
   color: #294665;
   width: 900px;
   font-family: Arial;
-  padding: 20px 60px 20px 0px;
+  padding: 20px 0px 20px 0px;
   margin: 0px auto 0px auto;
-  text-align: right;
+  text-align: center;
   font-size: 70%;
   text-transform: uppercase;
   border: 0px solid red;
