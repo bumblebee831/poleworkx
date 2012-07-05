@@ -47,7 +47,7 @@
                                        scale item_obj/@@images"
                           tal:condition="item_obj/image"
                           tal:replace="structure python: scale.scale('image',
-                                       scale='mini').tag()" />
+                                       scale='large').tag()" />
                     </div>
                     <div class="shop-item-caption">
                       <h2 tal:content="item/Title" />
