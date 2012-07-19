@@ -44,12 +44,15 @@
           </div>
           <input tal:condition="not:context/sales_price"
             name="price"
+            type="hidden"
             tal:attributes="value context/price" />
           <input tal:condition="context/sales_price"
             name="price"
+            type="hidden"
             tal:attributes="value context/sales_price" />
           <input tal:condition="context/productcode"
             name="productcode"
+            type="hidden"
             tal:attributes="value context/productcode" />
           <div class="xform-actions offset4 span4">
             <input id="form-button-submit"
