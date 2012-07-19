@@ -49,9 +49,12 @@
         <replace css:content="#portal-breadcrumbs" css:theme="#breadcrumbs" />
         <drop css:content="#breadcrumbs-you-are-here" />
 	    
+        <before css:theme="#navigation" css:content="#cart-viewlet" />
+
 	    <!-- Copy over the contents of the page body -->
 	    <replace css:content-children="#viewlet-above-content" css:theme-children="#above-content" />
 	    <replace css:content-children="#content" css:theme-children="#content" />
+        <before css:content=".portalMessage" css:theme="#content" />
 	    <replace css:content="#edit-bar" css:theme="#editbar" />
 	    <replace css:content-children="#viewlet-below-content" css:theme-children="#below-content" />
 
