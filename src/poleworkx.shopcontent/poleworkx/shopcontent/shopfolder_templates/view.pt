@@ -43,14 +43,18 @@
                   <div class="shop-item">
                     <div class="shop-item-image thumbnail"
                         tal:condition="exists:item/image">
+                      <a href=""
+                        tal:attributes="href item/getURL">
                       <img tal:define="item_obj item/getObject;
                                        scale item_obj/@@images"
                           tal:condition="item_obj/image"
                           tal:replace="structure python: scale.scale('image',
-                                       scale='large').tag()" />
+                                       scale='large').tag()" /></a>
                     </div>
                     <div class="shop-item-caption">
-                      <h2 tal:content="item/Title" />
+                      <h2><a href=""
+                            tal:attributes="href item/getURL"
+                            tal:content="item/Title" /></h2>
                       <p tal:content="item/Description" />
                       <tal:price tal:condition="exists:item/price">
                         <span tal:replace="item/price" /> &euro;
