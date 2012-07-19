@@ -1,0 +1,156 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-07-19 11:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: poleworkx.shopcontent\n"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.productcategory.xml
+msgid "A folderish product category type"
+msgstr ""
+
+#: ./../profiles/default/types/poleworkx.shopcontent.shopfolder.xml
+msgid "A sfolderish shop type"
+msgstr ""
+
+#: ./../profiles/default/types/poleworkx.shopcontent.product.xml
+msgid "A simple product type"
+msgstr ""
+
+#: ./../buyablebehavior.py:30
+msgid "Add sales or special offer price. This will override the actual price which will display lined-through"
+msgstr ""
+
+#: ./../product_templates/view.pt:38
+msgid "Amount"
+msgstr ""
+
+#: ./../product.py:29
+msgid "Article ID"
+msgstr ""
+
+#: ./../productcategory.py:24
+msgid "Category Image"
+msgstr ""
+
+#: ./../productcategory_templates/view.pt:63
+#: ./../shopfolder_templates/view.pt:67
+msgid "Details"
+msgstr ""
+
+#: ./../productcategory.py:30
+#: ./../shopfolder.py:33
+msgid "Enter an optional welcome text for this shop"
+msgstr ""
+
+#: ./../shopfolder.py:28
+msgid "Enter optional headline for the shop landing page "
+msgstr ""
+
+#: ./../buyablebehavior.py:47
+msgid "Enter weight information to warn for potential higher shipping costs."
+msgstr ""
+
+#: ./../shopfolder.py:37
+msgid "Featured Products"
+msgstr ""
+
+#: ./../shopfolder.py:27
+msgid "Headline"
+msgstr ""
+
+#: ./../buyablebehavior.py:36
+msgid "Include optional marketing- or infotext describing the sales price, e.g. valid through date"
+msgstr ""
+
+#: ./../product.py:68
+msgid "Item could not be added to the shopping cart. Please try again. If the error should persist, please contact the shop owner"
+msgstr ""
+
+#: ./../product.py:75
+msgid "Item has been added to the shopping cart"
+msgstr ""
+
+#: ./../product.py:35
+msgid "Main Product Image"
+msgstr ""
+
+#: ./../productcategory.py:29
+#: ./../shopfolder.py:32
+msgid "Main Text"
+msgstr ""
+
+#: ./../shopfolder.py:38
+msgid "Optional selection for featured products These items will be presented above the product listing"
+msgstr ""
+
+#: ./../buyablebehavior.py:41
+msgid "Packaging"
+msgstr ""
+
+#: ./../product.py:30
+msgid "Please enter a unique article id / product code that will be passed to the payment processor"
+msgstr ""
+
+#: ./../buyablebehavior.py:25
+msgid "Price"
+msgstr ""
+
+#: ./../profiles/default/types/poleworkx.shopcontent.product.xml
+#: ./../shopfolder.py:42
+msgid "Product"
+msgstr ""
+
+#: ./../product.py:41
+msgid "Product Information"
+msgstr ""
+
+#: ./../profiles/default/types/poleworkx.shopcontent.productcategory.xml
+msgid "ProductCategory"
+msgstr ""
+
+#: ./../buyablebehavior.py:29
+msgid "Sales Price"
+msgstr ""
+
+#: ./../profiles/default/types/poleworkx.shopcontent.shopfolder.xml
+msgid "ShopFolder"
+msgstr ""
+
+#: ./../productcategory_templates/view.pt:58
+#: ./../shopfolder_templates/view.pt:62
+msgid "Show products"
+msgstr ""
+
+#: ./../buyablebehavior.py:35
+msgid "Special Offer Details"
+msgstr ""
+
+#: ./../buyablebehavior.py:42
+msgid "Specify packaging details, e.g. sizes"
+msgstr ""
+
+#: ./../productcategory.py:25
+msgid "Upload image usable in the preview of the category"
+msgstr ""
+
+#: ./../product.py:36
+msgid "Upload main produt image to be displayed in product listings and search result"
+msgstr ""
+
+#: ./../buyablebehavior.py:46
+msgid "Weight"
+msgstr ""
+

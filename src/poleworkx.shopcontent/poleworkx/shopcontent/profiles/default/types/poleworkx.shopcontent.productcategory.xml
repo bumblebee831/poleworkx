@@ -14,6 +14,8 @@
   <property name="allowed_content_types">
     <element value="poleworkx.shopcontent.productcategory" />
     <element value="poleworkx.shopcontent.product" />
+    <element value="Image" />
+    <element value="File" />
   </property>
   <property name="allow_discussion">False</property>
 

@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: 2012-07-19 16:10+0000\n"
+"PO-Revision-Date: 2012-07-19 13:53+0100\n"
+"Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
+"Language-Team: KK Language Team <info@kreativkombinat.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: poleworkx.shopcontent\n"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.productcategory.xml
+msgid "A folderish product category type"
+msgstr "Ordner für eine Produktkategorie"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.shopfolder.xml
+msgid "A sfolderish shop type"
+msgstr "Shop Ordner"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.product.xml
+msgid "A simple product type"
+msgstr "Produkt Objekt"
+
+#: ./../buyablebehavior.py:30
+msgid "Add sales or special offer price. This will override the actual price which will display lined-through"
+msgstr "Tragen Sie hier einen optionalen Angebotspreis ein. Bei einem vorhandenen Angebotspreis wird der Produktpreis durchgestrichen angezeigt und stattdessen der Angebotspreis verwendet"
+
+#: ./../product_templates/view.pt:38
+msgid "Amount"
+msgstr "Anzahl"
+
+#: ./../product.py:29
+msgid "Article ID"
+msgstr "Artikelnummer"
+
+#: ./../productcategory.py:24
+msgid "Category Image"
+msgstr "Vorschaubild Kategorie"
+
+#: ./../productcategory_templates/view.pt:63
+#: ./../shopfolder_templates/view.pt:67
+msgid "Details"
+msgstr "Details"
+
+#: ./../productcategory.py:30
+#: ./../shopfolder.py:33
+msgid "Enter an optional welcome text for this shop"
+msgstr "Geben Sie hier einen optionalen EInführungstext für den Shop ein."
+
+#: ./../shopfolder.py:28
+msgid "Enter optional headline for the shop landing page "
+msgstr "Geben Sie eine optionale Überschrift für die Shopansicht ein"
+
+#: ./../buyablebehavior.py:47
+msgid "Enter weight information to warn for potential higher shipping costs."
+msgstr "Geben Sie hier zusätzliche Informationen zum Gewicht des Produktes an, um auf auf eventuell dadurch bedingte erhöhte Lieferkosten hinzuweisen"
+
+#: ./../shopfolder.py:37
+msgid "Featured Products"
+msgstr "Hervorgehobene Produkte"
+
+#: ./../shopfolder.py:27
+msgid "Headline"
+msgstr "Überschrift"
+
+#: ./../buyablebehavior.py:36
+msgid "Include optional marketing- or infotext describing the sales price, e.g. valid through date"
+msgstr "Geben Sie einen optionalen Marketing- oder Informationstext ein, der z.B. auf Specials oder Angebote hinweist."
+
+#: ./../product.py:68
+msgid "Item could not be added to the shopping cart. Please try again. If the error should persist, please contact the shop owner"
+msgstr "Der Artikel konnte nicht in den Warenkob gelegt werden. Bitte versuchen Sie den Vorgang erneut. Sollte der Fehler bestehen bleiben, wenden Sie sich bitte an den Shopbetreiber."
+
+#: ./../product.py:75
+msgid "Item has been added to the shopping cart"
+msgstr "Der Artikel wurde in den Warenkorb gelegt"
+
+#: ./../product.py:35
+msgid "Main Product Image"
+msgstr "Produktabbildung"
+
+#: ./../productcategory.py:29
+#: ./../shopfolder.py:32
+msgid "Main Text"
+msgstr "Haupttext"
+
+#: ./../shopfolder.py:38
+msgid "Optional selection for featured products These items will be presented above the product listing"
+msgstr "Erstellen Sie eine optionale Auflistung von hervorgehobenen Produkten, wie z.B. saisonale oder spezielle Angebote. Diese Liste wird oberhalb der Standardauflistung der verfügbaren Produkte angezeigt."
+
+#: ./../buyablebehavior.py:41
+msgid "Packaging"
+msgstr "Verpackung"
+
+#: ./../product.py:30
+msgid "Please enter a unique article id / product code that will be passed to the payment processor"
+msgstr "Bitte tragen Sie eine eindeutige Artikel- oder Produktnummer ein, die bei der Bestellabwicklung verwendet wird, um den Artikel eindeutig zu identifizieren."
+
+#: ./../buyablebehavior.py:25
+msgid "Price"
+msgstr "Artikelpreis"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.product.xml
+#: ./../shopfolder.py:42
+msgid "Product"
+msgstr "Artikel"
+
+#: ./../product.py:41
+msgid "Product Information"
+msgstr "Artikelinformationen"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.productcategory.xml
+msgid "ProductCategory"
+msgstr "Produktkategorie"
+
+#: ./../buyablebehavior.py:29
+msgid "Sales Price"
+msgstr "Angebotspreis"
+
+#: ./../profiles/default/types/poleworkx.shopcontent.shopfolder.xml
+msgid "ShopFolder"
+msgstr "Shop"
+
+#: ./../productcategory_templates/view.pt:58
+#: ./../shopfolder_templates/view.pt:62
+msgid "Show products"
+msgstr "Artikel anzeigen"
+
+#: ./../buyablebehavior.py:35
+msgid "Special Offer Details"
+msgstr "Details zum Sonderangebot/Special"
+
+#: ./../buyablebehavior.py:42
+msgid "Specify packaging details, e.g. sizes"
+msgstr "Informationen zur Verpackung, wie z.B. Packetgrösse"
+
+#: ./../productcategory.py:25
+msgid "Upload image usable in the preview of the category"
+msgstr "Laden Sie hier ein Vorschaubild für diese Produktkategorie hoch."
+
+#: ./../product.py:36
+msgid "Upload main produt image to be displayed in product listings and search result"
+msgstr "Leden Sie hier ein Vorschaubild für diesen Artikel hoch, das in Artikelauflistungen gezeigt wird. Über das Uplaod Tool können Sie später weitere Abbildungen zu diesem Artikel hinzufügen."
+
+#: ./../buyablebehavior.py:46
+msgid "Weight"
+msgstr "Gewicht"
+

@@ -64,7 +64,7 @@
                         i18n:translate=""
                         tal:condition="view/has_products"
                         tal:attributes="href item/getURL">
-                        Details</a>
+                        Product Details</a>
                     </div>
                   </div>
                 </div>
