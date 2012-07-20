@@ -31,6 +31,11 @@ class IBuyableInformation(form.Schema):
                       u"the actual price which will display lined-through"),
         required=False,
     )
+    shipping_price = schema.Float(
+        title=_(u"Shipping price"),
+        description=_(u"Enter additional shipping costs."),
+        required=False,
+    )
     sales_info = schema.Text(
         title=_(u"Special Offer Details"),
         description=_(u"Include optional marketing- or infotext describing "
