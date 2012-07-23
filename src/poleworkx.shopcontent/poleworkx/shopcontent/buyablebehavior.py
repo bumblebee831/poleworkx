@@ -18,8 +18,8 @@ class IBuyableInformation(form.Schema):
     form.fieldset(
         'buyable',
         label=u"Buyable Details",
-        fields=['price', 'sales_price', 'sales_info', 'packaging',
-                'weight'],
+        fields=['price', 'sales_price', 'shipping_price', 'sales_info',
+                'packaging', 'weight'],
     )
     price = schema.Float(
         title=_(u"Price"),
@@ -34,6 +34,7 @@ class IBuyableInformation(form.Schema):
     shipping_price = schema.Float(
         title=_(u"Shipping price"),
         description=_(u"Enter additional shipping costs."),
+        default='0.0',
         required=False,
     )
     sales_info = schema.Text(
