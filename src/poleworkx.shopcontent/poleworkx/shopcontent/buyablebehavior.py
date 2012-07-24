@@ -34,7 +34,6 @@ class IBuyableInformation(form.Schema):
     shipping_price = schema.Float(
         title=_(u"Shipping price"),
         description=_(u"Enter additional shipping costs."),
-        default='0.0',
         required=False,
     )
     sales_info = schema.Text(
