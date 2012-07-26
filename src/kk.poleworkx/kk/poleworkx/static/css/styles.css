@@ -68,7 +68,7 @@ h1 {
   font-size: 2em;
 }
 h2 {
-  font-size: 1.75em;
+  font-size: 1.2em;
   margin: 0px 0px 10px 0px;
 }
 h3 {
@@ -229,7 +229,7 @@ input {
   font-size: 1.1em;
   font-family: Georgia;
   font-weight: normal;
-  color: #000000;
+  color: #325479;
   padding: 0px 0px 0px 0px;
   border: 0px solid red;
   text-transform: uppercase;
@@ -505,6 +505,7 @@ div.thumbnail {
   border: 0px solid red;
   padding: 0px 20px 20px 10px !important;
   float: left;
+  width: 930px;
 }
 #content {
   line-height: 1.8em;
@@ -542,7 +543,7 @@ div.thumbnail {
   color: #294665 !important;
   font-weight: normal;
   text-transform: none;
-  font-size: 2.8em !important;
+  font-size: 1.8em !important;
   padding: 0px 0px 0px 0px;
 }
 #content p,
@@ -1950,4 +1951,33 @@ dd.portletItem .navTreeItem a {
 }
 .image-container img {
   border: 1px solid red;
+}
+#cart-viewlet {
+  border: 0px solid red;
+  background: #B3E3F4;
+  width: 920px;
+  margin: 0px auto;
+  -webkit-border-radius: 0px 0px 5px 5px !important;
+  -moz-border-radius: 0px 0px 5px 5px !important;
+  border-radius: 0px 0px 5px 5px !important;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
+  position: relative;
+  padding: 20px;
+}
+#shopping-cart td {
+  border: 1px solid #cccccc;
+}
+.btn-group {
+  margin: 20px 10px 20px 0px !important;
+  float: left;
+}
+.btn {
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin: 20px 0px 20px 0px !important;
+  padding: 10px !important;
+  text-transform: uppercase;
+  behavior: url(++theme++kk.poleworkx/js/PIE.htc);
+  position: relative;
+  background: #B3E3F4;
 }
