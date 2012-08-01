@@ -358,22 +358,20 @@ input {
 /* BREADCRUMBS */
 #portal-breadcrumbs {
   font-size: 0.7em;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 50px 20px 30px;
   padding: 0px 0px 0px 0px;
   background: transparent;
   color: #333;
   border: 0px solid red;
-  width: 610px;
-  float: right;
+  float: left;
 }
 .section-shop #portal-breadcrumbs {
   font-size: 0.7em;
-  margin: 20px 0px 20px 50px !important;
+  margin: 20px 50px 20px 50px !important;
   padding: 0px 0px 0px 0px;
   background: transparent;
   color: #333;
   border: 0px solid red;
-  width: 940px !important;
   float: left;
 }
 #portal-breadcrumbs a {
@@ -1842,7 +1840,7 @@ dd.portletItem .navTreeItem a {
   display: block;
   text-decoration: none;
   padding: 10px 0px 8px 0px !important;
-  background: url(++resource++kk.chromsystems.images/arrow-black.gif) no-repeat 0px 12px;
+  background: transparent;
   color: black;
   margin: 0px 0px 0px 0px;
   font-weight: bold;
@@ -1850,7 +1848,7 @@ dd.portletItem .navTreeItem a {
 }
 .navTreeItem a:hover {
   color: black !important;
-  background: url(++resource++kk.chromsystems.images/arrow-grey.gif) no-repeat 0px 12px !important;
+  background: transparent;
 }
 .navTreeCurrentItem span {
   color: black !important;
@@ -1954,15 +1952,28 @@ dd.portletItem .navTreeItem a {
 }
 #cart-viewlet {
   border: 0px solid red;
-  background: #B3E3F4;
-  width: 920px;
+  background: #b1e3f4;
+  width: 930px;
   margin: 0px auto;
   -webkit-border-radius: 0px 0px 5px 5px !important;
   -moz-border-radius: 0px 0px 5px 5px !important;
   border-radius: 0px 0px 5px 5px !important;
   behavior: url(++theme++kk.poleworkx/js/PIE.htc);
   position: relative;
-  padding: 20px;
+  padding: 0px 0px 20px 30px;
+}
+#cart-viewlet a {
+  background: url(../images/basket.gif) no-repeat 0px 7px #b1e3f4;
+  border: 0px solid red;
+  padding: 25px 0px 20px 70px;
+  margin: 0px 0px 0px 0px;
+  display: block;
+  width: 170px;
+}
+#cart-viewlet div {
+  border: 0px solid red;
+  margin: -20px 0px 0px 0px;
+  padding: 0px 0px 0px 70px;
 }
 #shopping-cart td {
   border: 1px solid #cccccc;
