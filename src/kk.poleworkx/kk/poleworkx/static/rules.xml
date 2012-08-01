@@ -4,13 +4,14 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
+    <theme href="minimal.html" if-path="@@edit-tile" />
     <theme href="termine.html" if-path="kurse-workshops/termine-anmeldung/" />
     <theme href="termine.html" css:if-content="body.section-shop" />
-    <theme href="theme.html" css:if-content="#visual-portal-wrapper" />
     
     <!-- Apply rules to a standard Plone Webpage -->
     <rules css:if-content="#visual-portal-wrapper">
-    
+        <notheme if="$ajax_load" />
+        <theme href="theme.html" />
         <!-- Head: title -->
         <replace css:theme="title" css:content="title" />
         <!-- Base tag -->
