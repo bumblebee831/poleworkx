@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-07-19 11:38+0000\n"
+"POT-Creation-Date: 2012-08-01 15:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,9 +45,8 @@ msgstr ""
 msgid "Category Image"
 msgstr ""
 
-#: ./../productcategory_templates/view.pt:63
-#: ./../shopfolder_templates/view.pt:67
-msgid "Details"
+#: ./../buyablebehavior.py:36
+msgid "Enter additional shipping costs."
 msgstr ""
 
 #: ./../productcategory.py:30
@@ -59,7 +58,7 @@ msgstr ""
 msgid "Enter optional headline for the shop landing page "
 msgstr ""
 
-#: ./../buyablebehavior.py:47
+#: ./../buyablebehavior.py:52
 msgid "Enter weight information to warn for potential higher shipping costs."
 msgstr ""
 
@@ -71,7 +70,7 @@ msgstr ""
 msgid "Headline"
 msgstr ""
 
-#: ./../buyablebehavior.py:36
+#: ./../buyablebehavior.py:41
 msgid "Include optional marketing- or infotext describing the sales price, e.g. valid through date"
 msgstr ""
 
@@ -96,7 +95,7 @@ msgstr ""
 msgid "Optional selection for featured products These items will be presented above the product listing"
 msgstr ""
 
-#: ./../buyablebehavior.py:41
+#: ./../buyablebehavior.py:46
 msgid "Packaging"
 msgstr ""
 
@@ -113,6 +112,11 @@ msgstr ""
 msgid "Product"
 msgstr ""
 
+#: ./../productcategory_templates/view.pt:63
+#: ./../shopfolder_templates/view.pt:67
+msgid "Product Details"
+msgstr ""
+
 #: ./../product.py:41
 msgid "Product Information"
 msgstr ""
@@ -125,6 +129,10 @@ msgstr ""
 msgid "Sales Price"
 msgstr ""
 
+#: ./../buyablebehavior.py:35
+msgid "Shipping price"
+msgstr ""
+
 #: ./../profiles/default/types/poleworkx.shopcontent.shopfolder.xml
 msgid "ShopFolder"
 msgstr ""
@@ -134,11 +142,11 @@ msgstr ""
 msgid "Show products"
 msgstr ""
 
-#: ./../buyablebehavior.py:35
+#: ./../buyablebehavior.py:40
 msgid "Special Offer Details"
 msgstr ""
 
-#: ./../buyablebehavior.py:42
+#: ./../buyablebehavior.py:47
 msgid "Specify packaging details, e.g. sizes"
 msgstr ""
 
@@ -150,7 +158,7 @@ msgstr ""
 msgid "Upload main produt image to be displayed in product listings and search result"
 msgstr ""
 
-#: ./../buyablebehavior.py:46
+#: ./../buyablebehavior.py:51
 msgid "Weight"
 msgstr ""
 

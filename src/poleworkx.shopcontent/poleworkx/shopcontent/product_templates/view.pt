@@ -59,7 +59,7 @@
               class="btn btn-cta btn-large"
               type="submit"
               name="form.button.Submit"
-              tal:attributes="value string:Order now"
+              tal:attributes="value string:In den Warenkorb legen"
               value="Order now" />
           </div>
           <span tal:replace="structure context/@@authenticator/authenticator"/>
