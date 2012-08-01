@@ -1963,7 +1963,7 @@ dd.portletItem .navTreeItem a {
   padding: 0px 0px 20px 30px;
 }
 #cart-viewlet a {
-  background: url(../images/basket.gif) no-repeat 0px 0px #b1e3f4;
+  background: url(../images/basket.gif) no-repeat 0px 7px #b1e3f4;
   border: 0px solid red;
   padding: 25px 0px 20px 70px;
   margin: 0px 0px 0px 0px;
